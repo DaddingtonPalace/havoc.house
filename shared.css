@@ -93,8 +93,7 @@ a.hlink img {
 }
 
 a.hlink img:hover {
-	filter: invert(0);
-	filter: brightness(50%) sepia(100%) hue-rotate(330deg);
+	filter: invert(0) brightness(50%) sepia(100%) hue-rotate(350deg) saturate(900%);
 }
 
 @media only screen and (max-width: 640px) {
