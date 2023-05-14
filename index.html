@@ -1,44 +1,123 @@
 <html>
-
 	<head>
-		<!--: Havoc House-->
 		<title>Havoc House ... loving you one nibble at a time</title>
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="shared.css">
+		<style>
+			/** vars and common elements */
+			:root {
+				--babypoop: rgb(93, 106, 21);
+			}
+			.mono {
+				font-family: "Courier New", monospace;
+			}
+			.fancy {
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+			.sep5, .sep10 {
+				width: 100%;
+			}
+			.sep5 {
+				padding: .3em 0em;
+			}
+			.sep10 {
+				padding: .5em 0em;
+			}
+		</style>
+		<style>
+			body {
+				background-color: black;
+				color: white;
+				margin: 0px;
+				padding: 1em 2em;
+				font-family: serif;
+				font-size: 1em;
+			}
+			.tag {
+				text-align: left;
+			}
+			.tag img {
+				height: 32px;
+				width: 32px;
+				vertical-align: middle;
+			}
+			.nav {
+				text-align: left;
+			}
+			.nav a {
+				white-space: pre;
+				text-decoration: none;
+			}
+			.nav img {
+				width: 50%;
+			}
+			.nav img:hover {
+				filter: invert(1) brightness(50%) sepia(100%) hue-rotate(350deg) saturate(900%);
+			}
+			.nav a {
+				text-decoration: none;
+				color: white;
+			}
+			.nav a:hover {
+				text-decoration: underline;
+			}
+			.footer {
+				border-top: 3px solid var(--babypoop);
+				text-align: left;
+				color: var(--babypoop);
+				font-size: .6em;
+			}
+		</style>
+		<style>
+			/** tweak layout on smaller screens */			
+			@media only screen and (max-width: 800px) {
+				body {
+					padding: .7em 1.4em;
+					font-size: .7em;
+				}
+				.tag img {
+					height: 16px;
+					width: 16px;
+				}
+				.nav img {
+					display: block;
+				}
+				.footer {
+					border-top: 2px solid var(--babypoop);
+					font-size: .5em; 
+				}
+			}
+		</style>
+		</style>
 		</head>
 	</head>
-
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M1CK7RR283"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-M1CK7RR283');
+	</script>
 	<body>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-M1CK7RR283"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-M1CK7RR283');
-		</script>
-		
-		<div class="header">
-			<div>
-				<img style="vertical-align:middle" src="star.png" alt="The Colgreen Star"/>
-				<span>everything's butter now</span>
-			</div>
-			<a class="hlink" href="/" title="Havoc.House"><img src="havoc_house.png" alt="Havoc House" /></a>
-			<a href="xmas2012/" class="siteNav">Xmas 2012</a> | 
-			<a href="xmas2011/" class="siteNav">Xmas 2011</a> | 
-			<a href="xmas2009/" class="siteNav">Xmas 2009</a>
+		<div class="tag mono">
+			<img src="star.png" alt="La Estrella Colgreen"/>
+			<span>everything's butter now</span>
 		</div>
-
-		<div class="body">
-			<a href="https://photos.app.goo.gl/uGA7nQSo5MJise8c6">
-				<img width="100%" src="mauna_kea_2017_mini.jpg" alt="Mauna Kea 2017" />
-			</a>
+		<div class="sep10"></div>
+		<div class="nav mono">
+			<a href="/" title="Havoc.House"><img src="havoc_house.webp" alt="Havoc House" /></a>
+			<div class="sep5"></div>
+			<a href="xmas2012/">Xmas 2012</a> | 
+			<a href="xmas2011/">Xmas 2011</a> | 
+			<a href="xmas2009/">Xmas 2009</a>
 		</div>
-
-		<div class="footer">
-			Copyright &copy; Stephen McKay. All rights reserved.
+		<div class="sep10"></div>
+		<a href="https://photos.app.goo.gl/uGA7nQSo5MJise8c6">
+			<img width="100%" src="mauna_kea.webp" alt="Mauna Kea 2017" />
+		</a>
+		<div class="sep10"></div>
+		<div class="footer fancy">
+			Copyright &copy; Stephen McKay
 		</div>
-
 	</body>
 </html>
