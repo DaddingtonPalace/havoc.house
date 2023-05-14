@@ -89,13 +89,12 @@ a.hlink {
 
 a.hlink img {
 	width: 50%;
-	content: url("havoc_house.png");
 	filter: invert(1);
 }
 
 a.hlink img:hover {
 	filter: invert(0);
-	content: url("havoc_house_hottie.png");
+	filter: brightness(50%) sepia(100%) hue-rotate(330deg);
 }
 
 @media only screen and (max-width: 640px) {
