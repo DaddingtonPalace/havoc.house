@@ -1,3 +1,3 @@
 # havoc.house
 
-Havoc House is my personal website.
+My personal website.
