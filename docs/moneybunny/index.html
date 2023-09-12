@@ -4,9 +4,10 @@
     <title>Money Conejito</title>
     <style>
         body {
-            background-color: rgb(35, 59, 59);
+            background-color: rgb(19, 82, 107);
             padding: 5em;
             overflow: hidden;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             /* Hide scrollbars */
         }
 
@@ -16,7 +17,7 @@
             width: 100%;
             border-radius: 25px;
             /*background-color: rgb(62, 103, 103);*/
-            background-color: rgb(38, 64, 64);
+            background-color: rgb(18, 99, 131);
         }
 
         #primary {
@@ -40,6 +41,7 @@
             align-items: center;
             justify-content: center;
             opacity: 0;
+            transition: opacity .25s;
         }
 
         #secondary.revealed {
@@ -53,7 +55,7 @@
             bottom: 0px;
             height: 20px;
             width: 100%;
-            background: #2f3c46;
+            background: rgb(19, 82, 107);
             color: rgb(99, 99, 99);
             font-size: .7em;
             align-items: center;
@@ -76,7 +78,7 @@
         var xhr = new XMLHttpRequest();
 
         // open a connection
-        xhr.open("GET", "https://havoc.house/pickypaper/vocab.json", true);
+        xhr.open("GET", "https://havoc.house/moneybunny/vocab.json", true);
 
         // send the request
         xhr.send();
@@ -145,7 +147,7 @@
                 alert("Invalid index " + current + ". For array length: " + items.length);
             }
             primary.innerText = current.value;
-            footer.innerText = "Showing item #" + index + " of " + items.length;
+            updateProgress(index);
         }
 
         function resetDisplay() {
@@ -154,12 +156,15 @@
 
         function revealSecondary() {
             if (current == null) {
-                alert("Current is not set!");
+                alert("Can't reveal clue, current item is not set!");
             }
             secondary.innerText = current.description;
             secondary.classList.add('revealed');
         }
 
+        function updateProgress(index) {
+            footer.innerText = "Showing item #" + index + " of " + items.length;
+        }
     </script>
 </body>
 
