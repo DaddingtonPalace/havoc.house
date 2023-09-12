@@ -48,7 +48,7 @@
             opacity: 1;
         }
 
-        #footer {
+        #progress {
             display: flex;
             position: fixed;
             left: 0px;
@@ -56,10 +56,15 @@
             height: 20px;
             width: 100%;
             background: rgb(19, 82, 107);
-            color: rgb(99, 99, 99);
-            font-size: .7em;
-            align-items: center;
+            align-items: left;
             justify-content: center;
+        }
+
+        #remaining {
+            display: block;
+            margin: 3px;
+            width: 100%;
+            background: rgb(80, 127, 145);
         }
     </style>
 </head>
@@ -69,7 +74,9 @@
         <div id="primary"></div>
         <div id="secondary"></div>
     </div>
-    <div id="footer"></div>
+    <div id="progress">
+        <div id="remaining"></div>
+    </div>
     <script>
 
         var items = [];
@@ -96,14 +103,18 @@
         var main = document.getElementById("main");
         var primary = document.getElementById("primary");
         var secondary = document.getElementById("secondary");
-        var footer = document.getElementById("footer");
+        var remaining = document.getElementById("remaining");
 
         window.onhashchange = function () {
             handleHashChange();
         };
 
+        document.addEventListener('keydown', function(event) {
+            advancePosition();
+        });
+
         main.addEventListener('click', function (event) {
-            handleMainClick();
+            advancePosition();
         });
 
         function handleHashChange() {
@@ -117,7 +128,7 @@
             displayEntry(numericValue);
         }
 
-        function handleMainClick() {
+        function advancePosition() {
             if (secondary.classList.contains("revealed")) {
                 loadNextEntry();
             } else {
@@ -142,7 +153,9 @@
             // todo check if valid index;
             resetDisplay();
             current = items[index];
+            console.log("Items length after splice: " + items.length);
             items.splice(index, 1);
+            console.log("Items length after splice: " + items.length);
             if (current == null) {
                 alert("Invalid index " + current + ". For array length: " + items.length);
             }
@@ -163,7 +176,14 @@
         }
 
         function updateProgress(index) {
-            footer.innerText = "Showing item #" + index + " of " + items.length;
+            // footer.innerText = "Showing item #" + index + " of " + items.length;
+            const total = items.length + completed.length;
+            if (total > 0) {
+                console.log("Percent complete: " + items.length / total);
+                remaining.style.width = 100 * (items.length / total) + "%";
+            } else {
+                remaining.style.width = 0;
+            }
         }
     </script>
 </body>
