@@ -280,8 +280,13 @@
         "note": "\r"
     },
     {
-        "value": "de lo anterior, se puede concluir que ...",
-        "description": "from the above, one can conclude that ...",
+        "value": "de lo anterior",
+        "description": "from the above (one can conclude that)",
+        "note": "\r"
+    },
+    {
+        "value": "se puede concluir que",
+        "description": "one can conclude that",
         "note": "\r"
     },
     {
@@ -336,6 +341,7 @@
     },
     {
         "value": "las pocos",
-        "description": "the few,"
+        "description": "the few",
+        "note": "\r"
     }
 ]

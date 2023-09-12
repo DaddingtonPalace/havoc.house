@@ -20,6 +20,24 @@
             background-color: rgb(18, 99, 131);
         }
 
+        #header {
+            display: flex;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            height: 20px;
+            width: 100%;
+            background: rgb(19, 82, 107);
+            align-items: left;
+            justify-content: center;
+            color: yellow;
+        }
+
+        #header div {
+            cursor: pointer;
+            margin: 10px;
+        }
+
         #primary {
             display: flex;
             width: 100%;
@@ -70,6 +88,9 @@
 </head>
 
 <body>
+    <div id="header">
+        <div src="vocab.json">Module #2</div> <div src="vocab_module3.json">Module #3</div>
+    </div>
     <div id="main">
         <div id="primary"></div>
         <div id="secondary"></div>
@@ -81,25 +102,9 @@
 
         var items = [];
         var completed = [];
-        // create a new XMLHttpRequest object
-        var xhr = new XMLHttpRequest();
-
-        // open a connection
-        xhr.open("GET", "https://havoc.house/moneybunny/vocab.json", true);
-
-        // send the request
-        xhr.send();
-
-        // handle the response
-        xhr.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                items = JSON.parse(this.responseText);
-                loadNextEntry();
-            }
-        }
-
         var current = null;
 
+        var header = document.getElementById("header");
         var main = document.getElementById("main");
         var primary = document.getElementById("primary");
         var secondary = document.getElementById("secondary");
@@ -113,9 +118,38 @@
             advancePosition();
         });
 
+        header.addEventListener('click', function (event) {
+            handleHeaderClick(event);
+        });
+
         main.addEventListener('click', function (event) {
             advancePosition();
         });
+
+        function handleHeaderClick(event) {
+            var src = event.target.attributes.src.nodeValue;
+            if (src != null) {
+                load(src);
+            }
+        }
+
+        function load(src) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://havoc.house/moneybunny/" + src, true);
+            xhr.send();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    loadFromText(JSON.parse(this.responseText));
+                }
+            }
+        }
+
+        function loadFromText(text) {
+            items = text;
+            current = null;
+            completed = [];
+            loadNextEntry();
+        }
 
         function handleHashChange() {
             var frag = location.hash;
