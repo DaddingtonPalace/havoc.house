@@ -34,7 +34,8 @@ function resetState() {
 }
 
 function resetCardDisplay() {
-	main.classList.remove('flipped');
+	main.classList.remove("flipped");
+	main.classList.remove("ended");
 }
 
 function resetProgressDisplay() {
@@ -76,8 +77,8 @@ function handleHeaderClick(event) {
 }
 
 function loadLibrary(index) {
-	// const url = "https://havoc.house/moneybunny/conejitos/" + libraries[index] + ".json";
-	const url = "https://havoc.house/moneybunny/" + libraries[index] + ".json";
+
+	const url = "https://havoc.house/moneybunny/conejitos/" + libraries[index] + ".json";
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET", url, true);
 	xhr.send();
