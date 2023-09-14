@@ -5,19 +5,10 @@
     <style>
         body {
             background-color: rgb(19, 82, 107);
-            padding: 5em;
+            padding: 7vw;
             overflow: hidden;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             /* Hide scrollbars */
-        }
-
-        #main {
-            cursor: pointer;
-            height: 100%;
-            width: 100%;
-            border-radius: 25px;
-            /*background-color: rgb(62, 103, 103);*/
-            background-color: rgb(18, 99, 131);
         }
 
         #header {
@@ -30,196 +21,109 @@
             background: rgb(19, 82, 107);
             align-items: left;
             justify-content: center;
-            color: yellow;
+            color: rgb(119, 198, 221);
         }
 
-        #header div {
+        #main {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+            /*background-color: rgb(62, 103, 103);*/
+            background-color: rgb(18, 99, 131);
+            font-size: 5vw;
+        }
+
+		.library_item {
             cursor: pointer;
             margin: 10px;
         }
 
-        #primary {
+		#primary {
             display: flex;
             width: 100%;
             height: 51%;
-            font-size: 2.5em;
             color: yellow;
-            letter-spacing: .2rem;
             align-items: center;
             justify-content: center;
             border-bottom: dashed 2px rgb(70, 121, 121);
+            user-select: none;
+            opacity: 1;
+            transition: opacity .25s ease;
         }
 
-        #secondary {
+        .flipped #primary {
+            opacity: .5;
+        }
+
+        .ended #primary {
+            transition: opacity 2s ease;
+			opacity: 0;
+        }
+
+		#secondary {
             display: flex;
             width: 100%;
             height: 49%;
-            font-size: 2.5em;
             color: white;
             align-items: center;
             justify-content: center;
+            user-select: none;
             opacity: 0;
-            transition: opacity .25s;
+			transition: opacity .25s ease;
         }
 
-        #secondary.revealed {
+        .flipped #secondary {
             opacity: 1;
         }
 
-        #progress {
+        .ended #secondary {
+            transition: opacity 2s ease;
+			opacity: 0;
+        }
+
+		#progress {
             display: flex;
+            flex-direction: row;
+            align-items: stretch;
             position: fixed;
             left: 0px;
             bottom: 0px;
-            height: 20px;
+            height: 1.5vw;
             width: 100%;
             background: rgb(19, 82, 107);
             align-items: left;
             justify-content: center;
         }
 
-        #remaining {
-            display: block;
+        #progress .item {
             margin: 3px;
             width: 100%;
             background: rgb(80, 127, 145);
+            flex: 1;
+        }
+
+        #progress .seen {
+            background: rgb(19, 82, 107);
+            transition: background-color 1s ease;
         }
     </style>
 </head>
 
 <body>
     <div id="header">
-        <div src="vocab.json">Module #2</div> <div src="vocab_module3.json">Module #3</div>
     </div>
     <div id="main">
         <div id="primary"></div>
         <div id="secondary"></div>
-    </div>
+	</div>
     <div id="progress">
-        <div id="remaining"></div>
     </div>
+    <script src="moneybunny.js"></script>
     <script>
-
-        var items = [];
-        var completed = [];
-        var current = null;
-
-        var header = document.getElementById("header");
-        var main = document.getElementById("main");
-        var primary = document.getElementById("primary");
-        var secondary = document.getElementById("secondary");
-        var remaining = document.getElementById("remaining");
-
-        window.onhashchange = function () {
-            handleHashChange();
-        };
-
-        document.addEventListener('keydown', function(event) {
-            advancePosition();
-        });
-
-        header.addEventListener('click', function (event) {
-            handleHeaderClick(event);
-        });
-
-        main.addEventListener('click', function (event) {
-            advancePosition();
-        });
-
-        function handleHeaderClick(event) {
-            var src = event.target.attributes.src.nodeValue;
-            if (src != null) {
-                load(src);
-            }
-        }
-
-        function load(src) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "https://havoc.house/moneybunny/" + src, true);
-            xhr.send();
-            xhr.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    loadFromText(JSON.parse(this.responseText));
-                }
-            }
-        }
-
-        function loadFromText(text) {
-            items = text;
-            current = null;
-            completed = [];
-            loadNextEntry();
-        }
-
-        function handleHashChange() {
-            var frag = location.hash;
-            var numericValue = frag.substring(1, frag.length);
-            if (items[numericValue] == null) {
-                alert("Invalid index: " + numericValue);
-                return;
-            }
-
-            displayEntry(numericValue);
-        }
-
-        function advancePosition() {
-            if (secondary.classList.contains("revealed")) {
-                loadNextEntry();
-            } else {
-                revealSecondary();
-            }
-        }
-
-        function getRandomIndex() {
-            return Math.floor(Math.random() * items.length + 1);
-        }
-
-        function loadNextEntry() {
-            if (current != null) {
-                completed.push(current);
-                current = null;
-            }
-            var next = getRandomIndex();;
-            location.hash = next;
-        }
-
-        function displayEntry(index) {
-            // todo check if valid index;
-            resetDisplay();
-            current = items[index];
-            console.log("Items length after splice: " + items.length);
-            items.splice(index, 1);
-            console.log("Items length after splice: " + items.length);
-            if (current == null) {
-                alert("Invalid index " + current + ". For array length: " + items.length);
-            }
-            primary.innerText = current.value;
-            updateProgress(index);
-        }
-
-        function resetDisplay() {
-            secondary.classList.remove('revealed');
-        }
-
-        function revealSecondary() {
-            if (current == null) {
-                alert("Can't reveal clue, current item is not set!");
-            }
-            secondary.innerText = current.description;
-            secondary.classList.add('revealed');
-        }
-
-        function updateProgress(index) {
-            // footer.innerText = "Showing item #" + index + " of " + items.length;
-            const total = items.length + completed.length;
-            if (total > 0) {
-                console.log("Percent complete: " + items.length / total);
-                remaining.style.width = 100 * (items.length / total) + "%";
-            } else {
-                remaining.style.width = 0;
-            }
-        }
+        setLibraryList(["vocab_module2", "vocab_module3"]);
     </script>
+
 </body>
 
 </html>
