@@ -154,13 +154,11 @@ function displayLibraryItem(next_item_position) {
 
 	// update the HTML display
 	primary.innerText = items[current_item_position].value;
-	secondary.innerText = items[current_item_position].description;
-
+	// don't load secondary text up front, otherwise it'll be
+	// shown briefly as the element is only hidden after
+	// a CSS transition (to 0 opacity) is completed
+	secondary.innerText = "";
 	updateProgress(current_item_position);
-
-	// console.log("Displayed item index: " + next_item_position);
-	// console.log("Seen " + seen);
-	// console.log("Unseen " + unseen);
 }
 
 function hasMoreItems() {
@@ -176,6 +174,7 @@ function advancePosition() {
 }
 
 function revealSecondary() {
+	secondary.innerText = items[current_item_position].description;
 	main.classList.add('flipped');
 }
 
