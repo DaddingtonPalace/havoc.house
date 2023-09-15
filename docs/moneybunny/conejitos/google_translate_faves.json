@@ -1,1343 +1,1290 @@
 [
 	{
-		"a menudo": "a pesar de",
-		"often": "although"
+		"value": "a menudo",
+		"description": "often"
 	},
 	{
-		"a menudo": "a tiempo",
-		"often": "on time"
+		"value": "a pesar de",
+		"description": "although"
 	},
 	{
-		"a menudo": "acaba de hacer",
-		"often": "just did"
+		"value": "a tiempo",
+		"description": "on time"
 	},
 	{
-		"a menudo": "acabados",
-		"often": "finishes"
+		"value": "acaba de hacer",
+		"description": "just did"
 	},
 	{
-		"a menudo": "acabar",
-		"often": "finish"
+		"value": "acabados",
+		"description": "finishes"
 	},
 	{
-		"a menudo": "acabo de dormir",
-		"often": "I just slept"
+		"value": "acabar",
+		"description": "finish"
 	},
 	{
-		"a menudo": "acordar",
-		"often": "agree"
+		"value": "acabo de dormir",
+		"description": "I just slept"
 	},
 	{
-		"a menudo": "acuerdo",
-		"often": "agreement"
+		"value": "acordar",
+		"description": "agree"
 	},
 	{
-		"a menudo": "adecuados",
-		"often": "suitable"
+		"value": "acuerdo",
+		"description": "agreement"
 	},
 	{
-		"a menudo": "adelante",
-		"often": "go ahead"
+		"value": "adecuados",
+		"description": "suitable"
 	},
 	{
-		"a menudo": "adinerada",
-		"often": "wealthy"
+		"value": "adelante",
+		"description": "go ahead"
 	},
 	{
-		"a menudo": "agresar",
-		"often": "assault"
+		"value": "adinerada",
+		"description": "wealthy"
 	},
 	{
-		"a menudo": "agujero",
-		"often": "hole"
+		"value": "agresar",
+		"description": "assault"
 	},
 	{
-		"a menudo": "ajardinado",
-		"often": "landscaped"
+		"value": "agujero",
+		"description": "hole"
 	},
 	{
-		"a menudo": "aji",
-		"often": "chili pepper"
+		"value": "ajardinado",
+		"description": "landscaped"
 	},
 	{
-		"a menudo": "al que",
-		"often": "to which"
+		"value": "aji",
+		"description": "chili pepper"
 	},
 	{
-		"a menudo": "alcanzar",
-		"often": "to attain"
+		"value": "al que",
+		"description": "to which"
 	},
 	{
-		"a menudo": "alcanzar",
-		"often": "to reach"
+		"value": "alcanzar",
+		"description": "to attain"
 	},
 	{
-		"a menudo": "algo así",
-		"often": "something like that"
+		"value": "alcanzar",
+		"description": "to reach"
 	},
 	{
-		"a menudo": "allí estaba",
-		"often": "there it was"
+		"value": "algo así",
+		"description": "something like that"
 	},
 	{
-		"a menudo": "alrededor",
-		"often": "around"
+		"value": "allí estaba",
+		"description": "there it was"
 	},
 	{
-		"a menudo": "amantes de la cerveza",
-		"often": "beer lovers"
+		"value": "alrededor",
+		"description": "around"
 	},
 	{
-		"a menudo": "ambos",
-		"often": "both"
+		"value": "amantes de la cerveza",
+		"description": "beer lovers"
 	},
 	{
-		"a menudo": "añade",
-		"often": "add"
+		"value": "ambos",
+		"description": "both"
 	},
 	{
-		"a menudo": "anoche nos sentimos alegres",
-		"often": "last night we felt happy"
+		"value": "añade",
+		"description": "add"
 	},
 	{
-		"a menudo": "anterior",
-		"often": ""
+		"value": "anoche nos sentimos alegres",
+		"description": "last night we felt happy"
 	},
 	{
-		"a menudo": "former, previous"
+		"value": "anterior",
+		"description": "former, previous"
 	},
 	{
-		"a menudo": "anteriormente",
-		"often": "previously"
+		"value": "anteriormente",
+		"description": "previously"
 	},
 	{
-		"a menudo": "apaciguar",
-		"often": "appease"
+		"value": "apaciguar",
+		"description": "appease"
 	},
 	{
-		"a menudo": "apagadar",
-		"often": "turn off"
+		"value": "apagadar",
+		"description": "turn off"
 	},
 	{
-		"a menudo": "apenas",
-		"often": "barely"
+		"value": "apenas",
+		"description": "barely"
 	},
 	{
-		"a menudo": "apenas tuvimos",
-		"often": "we hardly had"
+		"value": "apenas tuvimos",
+		"description": "we hardly had"
 	},
 	{
-		"a menudo": "aplastados",
-		"often": "squashed"
+		"value": "aplastados",
+		"description": "squashed"
 	},
 	{
-		"a menudo": "aplastar",
-		"often": ""
+		"value": "aplastar",
+		"description": "smash, crush"
 	},
 	{
-		"a menudo": "smash, crush"
+		"value": "aprovecha",
+		"description": "take advantage of"
 	},
 	{
-		"a menudo": "aprovecha",
-		"often": "take advantage of"
+		"value": "aprovechar",
+		"description": "take advantage of"
 	},
 	{
-		"a menudo": "aprovechar",
-		"often": "take advantage of"
+		"value": "arreglar",
+		"description": "fix"
 	},
 	{
-		"a menudo": "arreglar",
-		"often": "fix"
+		"value": "asunto",
+		"description": "affair"
 	},
 	{
-		"a menudo": "asunto",
-		"often": "affair"
+		"value": "atención al cliente",
+		"description": "Customer Support"
 	},
 	{
-		"a menudo": "atención al cliente",
-		"often": "Customer Support"
+		"value": "atontado",
+		"description": "stunned"
 	},
 	{
-		"a menudo": "atontado",
-		"often": "stunned"
+		"value": "atraso",
+		"description": "backwardness"
 	},
 	{
-		"a menudo": "atraso",
-		"often": "backwardness"
+		"value": "aunque",
+		"description": "although"
 	},
 	{
-		"a menudo": "aunque",
-		"often": "although"
+		"value": "avergonzado",
+		"description": "embarrassed"
 	},
 	{
-		"a menudo": "avergonzado",
-		"often": "embarrassed"
+		"value": "averiguar",
+		"description": "to find out"
 	},
 	{
-		"a menudo": "averiguar",
-		"often": "to find out"
+		"value": "ay chinga",
+		"description": "oh fuck"
 	},
 	{
-		"a menudo": "ay chinga",
-		"often": "oh fuck"
+		"value": "basta",
+		"description": "enough"
 	},
 	{
-		"a menudo": "basta",
-		"often": "enough"
+		"value": "bastante",
+		"description": "quite"
 	},
 	{
-		"a menudo": "bastante",
-		"often": "quite"
+		"value": "bastante",
+		"description": "pretty (much)"
 	},
 	{
-		"a menudo": "bastante",
-		"often": "pretty (much)"
+		"value": "bondadoso",
+		"description": "kind"
 	},
 	{
-		"a menudo": "bondadoso",
-		"often": "kind"
+		"value": "brincar",
+		"description": "jump"
 	},
 	{
-		"a menudo": "brincar",
-		"often": "jump"
+		"value": "bromeando",
+		"description": "joking"
 	},
 	{
-		"a menudo": "bromeando",
-		"often": "joking"
+		"value": "busqué",
+		"description": "I searched"
 	},
 	{
-		"a menudo": "busqué",
-		"often": "I searched"
+		"value": "cada vez en cuando",
+		"description": "every now and then"
 	},
 	{
-		"a menudo": "cada vez en cuando",
-		"often": "every now and then"
+		"value": "caer",
+		"description": "to fall"
 	},
 	{
-		"a menudo": "caer",
-		"often": "to fall"
+		"value": "caer",
+		"description": "to fall"
 	},
 	{
-		"a menudo": "caer",
-		"often": "to fall"
+		"value": "caer",
+		"description": "fall"
 	},
 	{
-		"a menudo": "caer",
-		"often": "fall"
+		"value": "canción",
+		"description": "song"
 	},
 	{
-		"a menudo": "canción",
-		"often": "song"
+		"value": "casa",
+		"description": "home"
 	},
 	{
-		"a menudo": "casa",
-		"often": "home"
+		"value": "casi",
+		"description": "almost"
 	},
 	{
-		"a menudo": "casi",
-		"often": "almost"
+		"value": "casi no hablo espanol",
+		"description": "I hardly speak Spanish"
 	},
 	{
-		"a menudo": "casi no hablo espanol",
-		"often": "I hardly speak Spanish"
+		"value": "cerebro",
+		"description": "brain"
 	},
 	{
-		"a menudo": "cerebro",
-		"often": "brain"
+		"value": "chamanes",
+		"description": "shamans"
 	},
 	{
-		"a menudo": "chamanes",
-		"often": "shamans"
+		"value": "chingones",
+		"description": "badass"
 	},
 	{
-		"a menudo": "chingones",
-		"often": "badass"
+		"value": "chulo",
+		"description": "cool, pimp"
 	},
 	{
-		"a menudo": "chulo",
-		"often": ""
+		"value": "cifras",
+		"description": "figures"
 	},
 	{
-		"a menudo": "cool, pimp"
+		"value": "como pueden ver",
+		"description": "as you can see"
 	},
 	{
-		"a menudo": "cifras",
-		"often": "figures"
+		"value": "compartir",
+		"description": "to share"
 	},
 	{
-		"a menudo": "como pueden ver",
-		"often": "as you can see"
+		"value": "con qué frecuencia",
+		"description": "how often"
 	},
 	{
-		"a menudo": "compartir",
-		"often": "to share"
+		"value": "consciemente",
+		"description": "consciously"
 	},
 	{
-		"a menudo": "con qué frecuencia",
-		"often": "how often"
+		"value": "conseguir",
+		"description": "get"
 	},
 	{
-		"a menudo": "consciemente",
-		"often": "consciously"
+		"value": "consejos",
+		"description": "advice"
 	},
 	{
-		"a menudo": "conseguir",
-		"often": "get"
+		"value": "contar",
+		"description": "tell"
 	},
 	{
-		"a menudo": "consejos",
-		"often": "advice"
+		"value": "contestar",
+		"description": "answer"
 	},
 	{
-		"a menudo": "contar",
-		"often": "tell"
+		"value": "contratar",
+		"description": "hire"
 	},
 	{
-		"a menudo": "contestar",
-		"often": "answer"
+		"value": "cosechar",
+		"description": "harvest"
 	},
 	{
-		"a menudo": "contratar",
-		"often": "hire"
+		"value": "costumbres",
+		"description": "customs"
 	},
 	{
-		"a menudo": "cosechar",
-		"often": "harvest"
+		"value": "crecer",
+		"description": "to grow, grow (up)"
 	},
 	{
-		"a menudo": "costumbres",
-		"often": "customs"
+		"value": "creciendo",
+		"description": "growing"
 	},
 	{
-		"a menudo": "crecer",
-		"often": ""
+		"value": "creció",
+		"description": "grew up"
 	},
 	{
-		"a menudo": "to grow, grow (up)"
+		"value": "cuadro",
+		"description": "picture"
 	},
 	{
-		"a menudo": "creciendo",
-		"often": "growing"
+		"value": "cubiertos",
+		"description": "cutlery"
 	},
 	{
-		"a menudo": "creció",
-		"often": "grew up"
+		"value": "cuéntame",
+		"description": "Tell me"
 	},
 	{
-		"a menudo": "cuadro",
-		"often": "picture"
+		"value": "cuento",
+		"description": "tale"
 	},
 	{
-		"a menudo": "cubiertos",
-		"often": "cutlery"
+		"value": "cuñado",
+		"description": "brother-in-law"
 	},
 	{
-		"a menudo": "cuéntame",
-		"often": "Tell me"
+		"value": "curanderos",
+		"description": "healers"
 	},
 	{
-		"a menudo": "cuento",
-		"often": "tale"
+		"value": "dañar",
+		"description": "to damage"
 	},
 	{
-		"a menudo": "cuñado",
-		"often": "brother-in-law"
+		"value": "dar consejos",
+		"description": "give advice"
 	},
 	{
-		"a menudo": "curanderos",
-		"often": "healers"
+		"value": "de la mitad",
+		"description": "from the half"
 	},
 	{
-		"a menudo": "dañar",
-		"often": "to damage"
+		"value": "de repente",
+		"description": "suddenly"
 	},
 	{
-		"a menudo": "dar consejos",
-		"often": "give advice"
+		"value": "de todas maneras",
+		"description": "anyway"
 	},
 	{
-		"a menudo": "de la mitad",
-		"often": "from the half"
+		"value": "deber",
+		"description": "have to"
 	},
 	{
-		"a menudo": "de repente",
-		"often": "suddenly"
+		"value": "dejar",
+		"description": "let"
 	},
 	{
-		"a menudo": "de todas maneras",
-		"often": "anyway"
+		"value": "demagogia",
+		"description": "demagoguery"
 	},
 	{
-		"a menudo": "deber",
-		"often": "have to"
+		"value": "denominar",
+		"description": "name"
 	},
 	{
-		"a menudo": "dejar",
-		"often": "let"
+		"value": "derivar",
+		"description": "derive"
 	},
 	{
-		"a menudo": "demagogia",
-		"often": "demagoguery"
+		"value": "desafío",
+		"description": "challenge"
 	},
 	{
-		"a menudo": "denominar",
-		"often": "name"
+		"value": "descargar",
+		"description": "discharge"
 	},
 	{
-		"a menudo": "derivar",
-		"often": "derive"
+		"value": "desconchinflada",
+		"description": "deflated"
 	},
 	{
-		"a menudo": "desafío",
-		"often": "challenge"
+		"value": "desconchinflado",
+		"description": "deflated"
 	},
 	{
-		"a menudo": "descargar",
-		"often": "discharge"
+		"value": "desde entonces",
+		"description": "since then"
 	},
 	{
-		"a menudo": "desconchinflada",
-		"often": "deflated"
+		"value": "desear",
+		"description": "to wish"
 	},
 	{
-		"a menudo": "desconchinflado",
-		"often": "deflated"
+		"value": "desmadre",
+		"description": "riot"
 	},
 	{
-		"a menudo": "desde entonces",
-		"often": "since then"
+		"value": "despejado",
+		"description": "clear"
 	},
 	{
-		"a menudo": "desear",
-		"often": "to wish"
+		"value": "despistado",
+		"description": "clueless"
 	},
 	{
-		"a menudo": "desmadre",
-		"often": "riot"
+		"value": "destacado",
+		"description": "outstanding"
 	},
 	{
-		"a menudo": "despejado",
-		"often": "clear"
+		"value": "diestros",
+		"description": "right-handed"
 	},
 	{
-		"a menudo": "despistado",
-		"often": "clueless"
+		"value": "discutir",
+		"description": "argue"
 	},
 	{
-		"a menudo": "destacado",
-		"often": "outstanding"
+		"value": "disponible",
+		"description": "available"
 	},
 	{
-		"a menudo": "diestros",
-		"often": "right-handed"
+		"value": "distraídos",
+		"description": "distracted"
 	},
 	{
-		"a menudo": "discutir",
-		"often": "argue"
+		"value": "divirtiendo",
+		"description": "having fun"
 	},
 	{
-		"a menudo": "disponible",
-		"often": "available"
+		"value": "el campo",
+		"description": "field"
 	},
 	{
-		"a menudo": "distraídos",
-		"often": "distracted"
+		"value": "el probador del tienda",
+		"description": "the store dressing room"
 	},
 	{
-		"a menudo": "divirtiendo",
-		"often": "having fun"
+		"value": "el probador del tienda",
+		"description": "the store changing room"
 	},
 	{
-		"a menudo": "el campo",
-		"often": "field"
+		"value": "elegir",
+		"description": "choose"
 	},
 	{
-		"a menudo": "el probador del tienda",
-		"often": "the store dressing room"
+		"value": "embutidos",
+		"description": "sausages"
 	},
 	{
-		"a menudo": "el probador del tienda",
-		"often": "the store changing room"
+		"value": "emparcaron",
+		"description": "they parked"
 	},
 	{
-		"a menudo": "elegir",
-		"often": "choose"
+		"value": "en lugar de",
+		"description": "rather"
 	},
 	{
-		"a menudo": "embutidos",
-		"often": "sausages"
+		"value": "en vez de",
+		"description": "instead of"
 	},
 	{
-		"a menudo": "emparcaron",
-		"often": "they parked"
+		"value": "en voz alta",
+		"description": "aloud"
 	},
 	{
-		"a menudo": "en lugar de",
-		"often": "rather"
+		"value": "encender",
+		"description": "turn on"
 	},
 	{
-		"a menudo": "en vez de",
-		"often": "instead of"
+		"value": "encontrada",
+		"description": "found"
 	},
 	{
-		"a menudo": "en voz alta",
-		"often": "aloud"
+		"value": "encuesta",
+		"description": "survey"
 	},
 	{
-		"a menudo": "encender",
-		"often": "turn on"
+		"value": "entonce",
+		"description": "so"
 	},
 	{
-		"a menudo": "encontrada",
-		"often": "found"
+		"value": "entre",
+		"description": "Come in"
 	},
 	{
-		"a menudo": "encuesta",
-		"often": "survey"
+		"value": "entregar",
+		"description": "deliver"
 	},
 	{
-		"a menudo": "entonce",
-		"often": "so"
+		"value": "entrevista",
+		"description": "interview"
 	},
 	{
-		"a menudo": "entre",
-		"often": "Come in"
+		"value": "equivocado",
+		"description": "mistaken"
 	},
 	{
-		"a menudo": "entregar",
-		"often": "deliver"
+		"value": "equivocado",
+		"description": "wrong, mistaken"
 	},
 	{
-		"a menudo": "entrevista",
-		"often": "interview"
+		"value": "escenario",
+		"description": "stage"
 	},
 	{
-		"a menudo": "equivocado",
-		"often": "mistaken"
+		"value": "escoger",
+		"description": "choose"
 	},
 	{
-		"a menudo": "equivocado",
-		"often": ""
+		"value": "esconder",
+		"description": "to hide"
 	},
 	{
-		"a menudo": "wrong, mistaken"
+		"value": "esconder",
+		"description": "hide"
 	},
 	{
-		"a menudo": "escenario",
-		"often": "stage"
+		"value": "esfuerzo",
+		"description": "effort"
 	},
 	{
-		"a menudo": "escoger",
-		"often": "choose"
+		"value": "esquina",
+		"description": "corner"
 	},
 	{
-		"a menudo": "esconder",
-		"often": "to hide"
+		"value": "estratagema",
+		"description": "contrivance, trick, ruse"
 	},
 	{
-		"a menudo": "esconder",
-		"often": "hide"
+		"value": "estrechas",
+		"description": "narrow"
 	},
 	{
-		"a menudo": "esfuerzo",
-		"often": "effort"
+		"value": "etiquetas",
+		"description": "labels"
 	},
 	{
-		"a menudo": "esquina",
-		"often": "corner"
+		"value": "explicar",
+		"description": "to explain"
 	},
 	{
-		"a menudo": "estratagema",
-		"often": ""
+		"value": "faltan",
+		"description": "missing, lacking"
 	},
 	{
-		"a menudo": "contrivance, trick, ruse"
+		"value": "fanáticos",
+		"description": "fans"
 	},
 	{
-		"a menudo": "estrechas",
-		"often": "narrow"
+		"value": "fastidioso",
+		"description": "annoying, bothersome"
 	},
 	{
-		"a menudo": "etiquetas",
-		"often": "labels"
+		"value": "flojos",
+		"description": "lazy"
 	},
 	{
-		"a menudo": "explicar",
-		"often": "to explain"
+		"value": "flotar",
+		"description": "float"
 	},
 	{
-		"a menudo": "faltan",
-		"often": ""
+		"value": "fortalecer",
+		"description": "strengthen"
 	},
 	{
-		"a menudo": "missing, lacking"
+		"value": "frase",
+		"description": "sentence"
 	},
 	{
-		"a menudo": "fanáticos",
-		"often": "fans"
+		"value": "frase",
+		"description": "sentence"
 	},
 	{
-		"a menudo": "fastidioso",
-		"often": ""
+		"value": "frenar",
+		"description": "brake"
 	},
 	{
-		"a menudo": "annoying, bothersome"
+		"value": "ganar",
+		"description": "to earn"
 	},
 	{
-		"a menudo": "flojos",
-		"often": "lazy"
+		"value": "gastar",
+		"description": "spend"
 	},
 	{
-		"a menudo": "flotar",
-		"often": "float"
+		"value": "gestionar",
+		"description": "manage"
 	},
 	{
-		"a menudo": "fortalecer",
-		"often": "strengthen"
+		"value": "gozar",
+		"description": "enjoy"
 	},
 	{
-		"a menudo": "frase",
-		"often": "sentence"
+		"value": "grabación",
+		"description": "recording"
 	},
 	{
-		"a menudo": "frase",
-		"often": "sentence"
+		"value": "graciosas",
+		"description": "funny"
 	},
 	{
-		"a menudo": "frenar",
-		"often": "brake"
+		"value": "guey",
+		"description": "dude"
 	},
 	{
-		"a menudo": "ganar",
-		"often": "to earn"
+		"value": "haber",
+		"description": "to have"
 	},
 	{
-		"a menudo": "gastar",
-		"often": "spend"
+		"value": "hacer",
+		"description": "to do"
 	},
 	{
-		"a menudo": "gestionar",
-		"often": "manage"
+		"value": "hay una manera?",
+		"description": "is there a way?"
 	},
 	{
-		"a menudo": "gozar",
-		"often": "enjoy"
+		"value": "herencia",
+		"description": "inheritance"
 	},
 	{
-		"a menudo": "grabación",
-		"often": "recording"
+		"value": "hispanohablantes",
+		"description": "Spanish speakers"
 	},
 	{
-		"a menudo": "graciosas",
-		"often": "funny"
+		"value": "hogar",
+		"description": "home"
 	},
 	{
-		"a menudo": "guey",
-		"often": "dude"
+		"value": "hoyo",
+		"description": "hole"
 	},
 	{
-		"a menudo": "haber",
-		"often": "to have"
+		"value": "hueco",
+		"description": "gap"
 	},
 	{
-		"a menudo": "hacer",
-		"often": "to do"
+		"value": "huerto",
+		"description": "vegetable patch"
 	},
 	{
-		"a menudo": "hay una manera?",
-		"often": "is there a way?"
+		"value": "ida y vuelta",
+		"description": "round trip"
 	},
 	{
-		"a menudo": "herencia",
-		"often": "inheritance"
+		"value": "imprescindible",
+		"description": "essential"
 	},
 	{
-		"a menudo": "hispanohablantes",
-		"often": "Spanish speakers"
+		"value": "impuestar",
+		"description": "impose"
 	},
 	{
-		"a menudo": "hogar",
-		"often": "home"
+		"value": "impuesto",
+		"description": "tax"
 	},
 	{
-		"a menudo": "hoyo",
-		"often": "hole"
+		"value": "incluso",
+		"description": "even"
 	},
 	{
-		"a menudo": "hueco",
-		"often": "gap"
+		"value": "intentar",
+		"description": "to try"
 	},
 	{
-		"a menudo": "huerto",
-		"often": "vegetable patch"
+		"value": "joder",
+		"description": "to fuck (sex), to fuck up, screw around"
 	},
 	{
-		"a menudo": "ida y vuelta",
-		"often": "round trip"
+		"value": "jugué",
+		"description": "i played"
 	},
 	{
-		"a menudo": "imprescindible",
-		"often": "essential"
+		"value": "juntos",
+		"description": "together"
 	},
 	{
-		"a menudo": "impuestar",
-		"often": "impose"
+		"value": "la mayoría",
+		"description": "the majority"
 	},
 	{
-		"a menudo": "impuesto",
-		"often": "tax"
+		"value": "la temporada de lluvia",
+		"description": "the rainy season"
 	},
 	{
-		"a menudo": "incluso",
-		"often": "even"
+		"value": "largo placo",
+		"description": "long term"
 	},
 	{
-		"a menudo": "intentar",
-		"often": "to try"
+		"value": "lavavajillas",
+		"description": "dishwasher"
 	},
 	{
-		"a menudo": "joder",
-		"often": ""
+		"value": "lejos",
+		"description": "far"
 	},
 	{
-		"a menudo": "to fuck (sex), to fuck up, screw around"
+		"value": "llegar",
+		"description": "arrive, reach"
 	},
 	{
-		"a menudo": "jugué",
-		"often": "i played"
+		"value": "llenar",
+		"description": "fill in"
 	},
 	{
-		"a menudo": "juntos",
-		"often": "together"
+		"value": "lo escuché",
+		"description": "I heard it"
 	},
 	{
-		"a menudo": "la mayoría",
-		"often": "the majority"
+		"value": "los anteriores",
+		"description": "the previous ones"
 	},
 	{
-		"a menudo": "la temporada de lluvia",
-		"often": "the rainy season"
+		"value": "luchar",
+		"description": "fight, struggle"
 	},
 	{
-		"a menudo": "largo placo",
-		"often": "long term"
+		"value": "madurar",
+		"description": "ripen"
 	},
 	{
-		"a menudo": "lavavajillas",
-		"often": "dishwasher"
+		"value": "mala fama",
+		"description": "notoriety"
 	},
 	{
-		"a menudo": "lejos",
-		"often": "far"
+		"value": "manejar",
+		"description": "handle"
 	},
 	{
-		"a menudo": "llegar",
-		"often": ""
+		"value": "más allá de",
+		"description": "beyond"
 	},
 	{
-		"a menudo": "arrive, reach"
+		"value": "me parece",
+		"description": "it seems to me"
 	},
 	{
-		"a menudo": "llenar",
-		"often": "fill in"
+		"value": "medir",
+		"description": "measure"
 	},
 	{
-		"a menudo": "lo escuché",
-		"often": "I heard it"
+		"value": "mostrar",
+		"description": "show"
 	},
 	{
-		"a menudo": "los anteriores",
-		"often": "the previous ones"
+		"value": "mudo",
+		"description": "dumb (unable to speak)"
 	},
 	{
-		"a menudo": "luchar",
-		"often": ""
+		"value": "muebles",
+		"description": "furniture"
 	},
 	{
-		"a menudo": "fight, struggle"
+		"value": "muy flotado",
+		"description": "very floaty"
 	},
 	{
-		"a menudo": "madurar",
-		"often": "ripen"
+		"value": "muy poco, claro",
+		"description": "very little, of course"
 	},
 	{
-		"a menudo": "mala fama",
-		"often": "notoriety"
+		"value": "ni",
+		"description": "neither, nor"
 	},
 	{
-		"a menudo": "manejar",
-		"often": "handle"
+		"value": "ni siquiera",
+		"description": "not even"
 	},
 	{
-		"a menudo": "más allá de",
-		"often": "beyond"
+		"value": "Ni siquiera parpadear",
+		"description": "Not even blink"
 	},
 	{
-		"a menudo": "me parece",
-		"often": "it seems to me"
+		"value": "nivel",
+		"description": "level"
 	},
 	{
-		"a menudo": "medir",
-		"often": "measure"
+		"value": "no hay de qué",
+		"description": "it doesn't matter"
 	},
 	{
-		"a menudo": "mostrar",
-		"often": "show"
+		"value": "No nos interesamos en las problemas suyas.",
+		"description": "We are not interested in your problems."
 	},
 	{
-		"a menudo": "mudo",
-		"often": "dumb (unable to speak)"
+		"value": "no se sabe",
+		"description": "it is not known"
 	},
 	{
-		"a menudo": "muebles",
-		"often": "furniture"
+		"value": "no tengo ganas",
+		"description": "I have no desire (to do ...)"
 	},
 	{
-		"a menudo": "muy flotado",
-		"often": "very floaty"
+		"value": "nos vemos",
+		"description": "see ya"
 	},
 	{
-		"a menudo": "muy poco, claro",
-		"often": ""
+		"value": "olvidar",
+		"description": "to forget"
 	},
 	{
-		"a menudo": "very little, of course"
+		"value": "onírica",
+		"description": "dreamlike"
 	},
 	{
-		"a menudo": "ni",
-		"often": ""
+		"value": "oración",
+		"description": "prayer, sentence"
 	},
 	{
-		"a menudo": "neither, nor"
+		"value": "papi chulo",
+		"description": "pimp daddy"
 	},
 	{
-		"a menudo": "ni siquiera",
-		"often": "not even"
+		"value": "paracer",
+		"description": "seem"
 	},
 	{
-		"a menudo": "Ni siquiera parpadear",
-		"often": "Not even blink"
+		"value": "párrafo",
+		"description": "paragraph"
 	},
 	{
-		"a menudo": "nivel",
-		"often": "level"
+		"value": "pasear",
+		"description": "walk"
 	},
 	{
-		"a menudo": "no hay de qué",
-		"often": "it doesn't matter"
+		"value": "peatonal",
+		"description": "pedestrian"
 	},
 	{
-		"a menudo": "No nos interesamos en las problemas suyas.",
-		"often": "We are not interested in your problems."
+		"value": "pedir",
+		"description": "ask"
 	},
 	{
-		"a menudo": "no se sabe",
-		"often": "it is not known"
+		"value": "pelear",
+		"description": "fight"
 	},
 	{
-		"a menudo": "no tengo ganas",
-		"often": "I have no desire (to do ...)"
+		"value": "pendejo",
+		"description": "stupid"
 	},
 	{
-		"a menudo": "nos vemos",
-		"often": "see ya"
+		"value": "peor",
+		"description": "worse"
 	},
 	{
-		"a menudo": "olvidar",
-		"often": "to forget"
+		"value": "perder",
+		"description": "to lose"
 	},
 	{
-		"a menudo": "onírica",
-		"often": "dreamlike"
+		"value": "perezoso",
+		"description": "lazy"
 	},
 	{
-		"a menudo": "oración",
-		"often": ""
+		"value": "piedra",
+		"description": "stone"
 	},
 	{
-		"a menudo": "prayer, sentence"
+		"value": "pinche viejo amargado",
+		"description": "fucking bitter old man"
 	},
 	{
-		"a menudo": "papi chulo",
-		"often": "pimp daddy"
+		"value": "polémica",
+		"description": "controversy"
 	},
 	{
-		"a menudo": "paracer",
-		"often": "seem"
+		"value": "pollo a la plancha",
+		"description": "grilled chicken"
 	},
 	{
-		"a menudo": "párrafo",
-		"often": "paragraph"
+		"value": "Por favor déjame morir",
+		"description": "please let me die"
 	},
 	{
-		"a menudo": "pasear",
-		"often": "walk"
+		"value": "por la mitad",
+		"description": "in half"
 	},
 	{
-		"a menudo": "peatonal",
-		"often": "pedestrian"
+		"value": "por supuesto",
+		"description": "of course"
 	},
 	{
-		"a menudo": "pedir",
-		"often": "ask"
+		"value": "Posteriormente",
+		"description": "Subsequently"
 	},
 	{
-		"a menudo": "pelear",
-		"often": "fight"
+		"value": "preciosa",
+		"description": "lovely"
 	},
 	{
-		"a menudo": "pendejo",
-		"often": "stupid"
+		"value": "preguntar",
+		"description": "ask"
 	},
 	{
-		"a menudo": "peor",
-		"often": "worse"
+		"value": "preocupado",
+		"description": "concerned"
 	},
 	{
-		"a menudo": "perder",
-		"often": "to lose"
+		"value": "Profundo",
+		"description": "Deep"
 	},
 	{
-		"a menudo": "perezoso",
-		"often": "lazy"
+		"value": "propia",
+		"description": "own"
 	},
 	{
-		"a menudo": "piedra",
-		"often": "stone"
+		"value": "proporcionar",
+		"description": "provide"
 	},
 	{
-		"a menudo": "pinche viejo amargado",
-		"often": "fucking bitter old man"
+		"value": "propósito",
+		"description": "purpose"
 	},
 	{
-		"a menudo": "polémica",
-		"often": "controversy"
+		"value": "Protagonizó",
+		"description": "starred"
 	},
 	{
-		"a menudo": "pollo a la plancha",
-		"often": "grilled chicken"
+		"value": "pueden encontrar",
+		"description": "can find"
 	},
 	{
-		"a menudo": "Por favor déjame morir",
-		"often": "please let me die"
+		"value": "Puedes hacerlo picante?",
+		"description": "Can you make it spicy?"
 	},
 	{
-		"a menudo": "por la mitad",
-		"often": "in half"
+		"value": "puesto que es",
+		"description": "Since it is"
 	},
 	{
-		"a menudo": "por supuesto",
-		"often": "of course"
+		"value": "puro desmadre de tacos",
+		"description": "pure taco riot"
 	},
 	{
-		"a menudo": "Posteriormente",
-		"often": "Subsequently"
+		"value": "que da igual",
+		"description": "it remains the same"
 	},
 	{
-		"a menudo": "preciosa",
-		"often": "lovely"
+		"value": "que dejaron",
+		"description": "what they leave"
 	},
 	{
-		"a menudo": "preguntar",
-		"often": "ask"
+		"value": "Qué hay de nuevo",
+		"description": "What's new"
 	},
 	{
-		"a menudo": "preocupado",
-		"often": "concerned"
+		"value": "Qué lástima!",
+		"description": "What a pity!"
 	},
 	{
-		"a menudo": "Profundo",
-		"often": "Deep"
+		"value": "que viene",
+		"description": "coming"
 	},
 	{
-		"a menudo": "propia",
-		"often": "own"
+		"value": "Quedar",
+		"description": "Stay"
 	},
 	{
-		"a menudo": "proporcionar",
-		"often": "provide"
+		"value": "quedarse",
+		"description": "to stay"
 	},
 	{
-		"a menudo": "propósito",
-		"often": "purpose"
+		"value": "quejar",
+		"description": "complain"
 	},
 	{
-		"a menudo": "Protagonizó",
-		"often": "starred"
+		"value": "Querida",
+		"description": "Dear"
 	},
 	{
-		"a menudo": "pueden encontrar",
-		"often": "can find"
+		"value": "quién sabe",
+		"description": "who knows"
 	},
 	{
-		"a menudo": "Puedes hacerlo picante?",
-		"often": "Can you make it spicy?"
+		"value": "quisas",
+		"description": "maybe"
 	},
 	{
-		"a menudo": "puesto que es",
-		"often": "Since it is"
+		"value": "quizás",
+		"description": "maybe"
 	},
 	{
-		"a menudo": "puro desmadre de tacos",
-		"often": "pure taco riot"
+		"value": "quizás",
+		"description": "maybe"
 	},
 	{
-		"a menudo": "que da igual",
-		"often": "it remains the same"
+		"value": "raíz",
+		"description": "root"
 	},
 	{
-		"a menudo": "que dejaron",
-		"often": "what they leave"
+		"value": "rato",
+		"description": "a while"
 	},
 	{
-		"a menudo": "Qué hay de nuevo",
-		"often": "What's new"
+		"value": "realizada",
+		"description": "made"
 	},
 	{
-		"a menudo": "Qué lástima!",
-		"often": "What a pity!"
+		"value": "realizar",
+		"description": "perform"
 	},
 	{
-		"a menudo": "que viene",
-		"often": "coming"
+		"value": "recorrieron",
+		"description": "toured"
 	},
 	{
-		"a menudo": "Quedar",
-		"often": "Stay"
+		"value": "regalar",
+		"description": "give away"
 	},
 	{
-		"a menudo": "quedarse",
-		"often": "to stay"
+		"value": "repentinas",
+		"description": "sudden"
 	},
 	{
-		"a menudo": "quejar",
-		"often": "complain"
+		"value": "repollo",
+		"description": "cabbage"
 	},
 	{
-		"a menudo": "Querida",
-		"often": "Dear"
+		"value": "responder",
+		"description": "answer"
 	},
 	{
-		"a menudo": "quién sabe",
-		"often": "who knows"
+		"value": "respuestas",
+		"description": "answers"
 	},
 	{
-		"a menudo": "quisas",
-		"often": "maybe"
+		"value": "riquísimo",
+		"description": "delicious"
 	},
 	{
-		"a menudo": "quizás",
-		"often": "maybe"
+		"value": "riquísimo",
+		"description": "rich"
 	},
 	{
-		"a menudo": "quizás",
-		"often": "maybe"
+		"value": "rodeada",
+		"description": "surrounded"
 	},
 	{
-		"a menudo": "raíz",
-		"often": "root"
+		"value": "rodear",
+		"description": "surround"
 	},
 	{
-		"a menudo": "rato",
-		"often": "a while"
+		"value": "romper",
+		"description": "to break"
 	},
 	{
-		"a menudo": "realizada",
-		"often": "made"
+		"value": "ruidoso",
+		"description": "noisy"
 	},
 	{
-		"a menudo": "realizar",
-		"often": "perform"
+		"value": "se quejó",
+		"description": "She complained"
 	},
 	{
-		"a menudo": "recorrieron",
-		"often": "toured"
+		"value": "seguir",
+		"description": "follow, continue"
 	},
 	{
-		"a menudo": "regalar",
-		"often": "give away"
+		"value": "seguir",
+		"description": "follow, continue"
 	},
 	{
-		"a menudo": "repentinas",
-		"often": "sudden"
+		"value": "según",
+		"description": "according"
 	},
 	{
-		"a menudo": "repollo",
-		"often": "cabbage"
+		"value": "según se tipo de irregularidad",
+		"description": "depending on the type of irregularity"
 	},
 	{
-		"a menudo": "responder",
-		"often": "answer"
+		"value": "semillas",
+		"description": "seeds"
 	},
 	{
-		"a menudo": "respuestas",
-		"often": "answers"
+		"value": "sentada",
+		"description": "sitting"
 	},
 	{
-		"a menudo": "riquísimo",
-		"often": "delicious"
+		"value": "sentimientos",
+		"description": "feelings"
 	},
 	{
-		"a menudo": "riquísimo",
-		"often": "rich"
+		"value": "si ser bello es un delito, declaro culpable",
+		"description": "If being beautiful is a crime, I plead guilty"
 	},
 	{
-		"a menudo": "rodeada",
-		"often": "surrounded"
+		"value": "siguiente",
+		"description": "following"
 	},
 	{
-		"a menudo": "rodear",
-		"often": "surround"
+		"value": "siguir",
+		"description": "follow"
 	},
 	{
-		"a menudo": "romper",
-		"often": "to break"
+		"value": "sin embargo",
+		"description": "however, nevertheless"
 	},
 	{
-		"a menudo": "ruidoso",
-		"often": "noisy"
+		"value": "sinfín",
+		"description": "endless"
 	},
 	{
-		"a menudo": "se quejó",
-		"often": "She complained"
+		"value": "situada",
+		"description": "situated"
 	},
 	{
-		"a menudo": "seguir",
-		"often": ""
+		"value": "sonrisa",
+		"description": "smile"
 	},
 	{
-		"a menudo": "follow, continue"
+		"value": "soplar",
+		"description": "blow"
 	},
 	{
-		"a menudo": "seguir",
-		"often": ""
+		"value": "subir",
+		"description": "to upload"
 	},
 	{
-		"a menudo": "follow, continue"
+		"value": "subir",
+		"description": "go up"
 	},
 	{
-		"a menudo": "según",
-		"often": "according"
+		"value": "subrayada",
+		"description": "underlined"
 	},
 	{
-		"a menudo": "según se tipo de irregularidad",
-		"often": "depending on the type of irregularity"
+		"value": "sucede",
+		"description": "happens"
 	},
 	{
-		"a menudo": "semillas",
-		"often": "seeds"
+		"value": "sueño",
+		"description": "sleep"
 	},
 	{
-		"a menudo": "sentada",
-		"often": "sitting"
+		"value": "sueños",
+		"description": "dreams"
 	},
 	{
-		"a menudo": "sentimientos",
-		"often": "feelings"
+		"value": "suerte",
+		"description": "luck"
 	},
 	{
-		"a menudo": "si ser bello es un delito, declaro culpable",
-		"often": ""
+		"value": "sufrimiento",
+		"description": "suffering"
 	},
 	{
-		"a menudo": "If being beautiful is a crime, I plead guilty"
+		"value": "suponer",
+		"description": "suppose"
 	},
 	{
-		"a menudo": "siguiente",
-		"often": "following"
+		"value": "tamaño",
+		"description": "size"
 	},
 	{
-		"a menudo": "siguir",
-		"often": "follow"
+		"value": "tampoco",
+		"description": "neither"
 	},
 	{
-		"a menudo": "sin embargo",
-		"often": ""
+		"value": "tan difícil",
+		"description": "so hard"
 	},
 	{
-		"a menudo": "however, nevertheless"
+		"value": "tanto para nada",
+		"description": "so much for nothing"
 	},
 	{
-		"a menudo": "sinfín",
-		"often": "endless"
+		"value": "tantos como",
+		"description": "as many as"
 	},
 	{
-		"a menudo": "situada",
-		"often": "situated"
+		"value": "temor",
+		"description": "fear"
 	},
 	{
-		"a menudo": "sonrisa",
-		"often": "smile"
+		"value": "teniendo en cuenta",
+		"description": "taking into account"
 	},
 	{
-		"a menudo": "soplar",
-		"often": "blow"
+		"value": "tiznada",
+		"description": "sooty"
 	},
 	{
-		"a menudo": "subir",
-		"often": "to upload"
+		"value": "todavía",
+		"description": "still"
 	},
 	{
-		"a menudo": "subir",
-		"often": "go up"
+		"value": "todos gritaron",
+		"description": "everyone yelled"
 	},
 	{
-		"a menudo": "subrayada",
-		"often": "underlined"
+		"value": "trámite",
+		"description": "procedure"
 	},
 	{
-		"a menudo": "sucede",
-		"often": "happens"
+		"value": "travieso",
+		"description": "naughty"
 	},
 	{
-		"a menudo": "sueño",
-		"often": "sleep"
+		"value": "tuétano",
+		"description": "marrow"
 	},
 	{
-		"a menudo": "sueños",
-		"often": "dreams"
+		"value": "turnar",
+		"description": "turn"
 	},
 	{
-		"a menudo": "suerte",
-		"often": "luck"
+		"value": "un lindo recuerdo",
+		"description": "a nice memory"
 	},
 	{
-		"a menudo": "sufrimiento",
-		"often": "suffering"
+		"value": "un poquitín",
+		"description": "a little bit"
 	},
 	{
-		"a menudo": "suponer",
-		"often": "suppose"
+		"value": "un tiroteo impactante",
+		"description": "a shocking shooting"
 	},
 	{
-		"a menudo": "tamaño",
-		"often": "size"
+		"value": "unifamilar",
+		"description": "single family"
 	},
 	{
-		"a menudo": "tampoco",
-		"often": "neither"
+		"value": "usurpador",
+		"description": "usurper"
 	},
 	{
-		"a menudo": "tan difícil",
-		"often": "so hard"
+		"value": "vacer",
+		"description": "empty"
 	},
 	{
-		"a menudo": "tanto para nada",
-		"often": "so much for nothing"
+		"value": "vale",
+		"description": "okay"
 	},
 	{
-		"a menudo": "tantos como",
-		"often": "as many as"
+		"value": "vanidosa",
+		"description": "vain"
 	},
 	{
-		"a menudo": "temor",
-		"often": "fear"
+		"value": "venir",
+		"description": "come"
 	},
 	{
-		"a menudo": "teniendo en cuenta",
-		"often": "taking into account"
+		"value": "vidrio",
+		"description": "glass"
 	},
 	{
-		"a menudo": "tiznada",
-		"often": "sooty"
+		"value": "viento",
+		"description": "wind"
 	},
 	{
-		"a menudo": "todavía",
-		"often": "still"
+		"value": "vivienda",
+		"description": "living place"
 	},
 	{
-		"a menudo": "todos gritaron",
-		"often": "everyone yelled"
+		"value": "y para usted, caballero?",
+		"description": "and for you, sir?"
 	},
 	{
-		"a menudo": "trámite",
-		"often": "procedure"
+		"value": "ya compartido",
+		"description": "already shared"
 	},
 	{
-		"a menudo": "travieso",
-		"often": "naughty"
+		"value": "ya no vale",
+		"description": "no longer worth"
 	},
 	{
-		"a menudo": "tuétano",
-		"often": "marrow"
+		"value": "ya vuelvo",
+		"description": "I'll be right back"
 	},
 	{
-		"a menudo": "turnar",
-		"often": "turn"
+		"value": "yo lo único",
+		"description": "I'm the only one"
 	},
 	{
-		"a menudo": "un lindo recuerdo",
-		"often": "a nice memory"
-	},
-	{
-		"a menudo": "un poquitín",
-		"often": "a little bit"
-	},
-	{
-		"a menudo": "un tiroteo impactante",
-		"often": "a shocking shooting"
-	},
-	{
-		"a menudo": "unifamilar",
-		"often": "single family"
-	},
-	{
-		"a menudo": "usurpador",
-		"often": "usurper"
-	},
-	{
-		"a menudo": "vacer",
-		"often": "empty"
-	},
-	{
-		"a menudo": "vale",
-		"often": "okay"
-	},
-	{
-		"a menudo": "vanidosa",
-		"often": "vain"
-	},
-	{
-		"a menudo": "venir",
-		"often": "come"
-	},
-	{
-		"a menudo": "vidrio",
-		"often": "glass"
-	},
-	{
-		"a menudo": "viento",
-		"often": "wind"
-	},
-	{
-		"a menudo": "vivienda",
-		"often": "living place"
-	},
-	{
-		"a menudo": "y para usted, caballero?",
-		"often": ""
-	},
-	{
-		"a menudo": "and for you, sir?"
-	},
-	{
-		"a menudo": "ya compartido",
-		"often": "already shared"
-	},
-	{
-		"a menudo": "ya no vale",
-		"often": "no longer worth"
-	},
-	{
-		"a menudo": "ya vuelvo",
-		"often": "I'll be right back"
-	},
-	{
-		"a menudo": "yo lo único",
-		"often": "I'm the only one"
-	},
-	{
-		"a menudo": "zurdos",
-		"often": "left-handed"
+		"value": "zurdos",
+		"description": "left-handed"
 	}
 ]

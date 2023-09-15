@@ -52,7 +52,7 @@ function onLibrariesChanged() {
 	for (let i = 0; i < libraries.length; i++) {
 		var node = document.createElement("div");
 		node.id = i;
-		node.innerText = libraries[i];
+		node.innerText = libraries[i].name;
 		node.classList.add("library_item");
 		header.appendChild(node);
 	}
@@ -77,8 +77,7 @@ function handleHeaderClick(event) {
 }
 
 function loadLibrary(index) {
-
-	const url = "https://havoc.house/moneybunny/conejitos/" + libraries[index] + ".json";
+	const url = "https://havoc.house/moneybunny/" + libraries[index].src;
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET", url, true);
 	xhr.send();

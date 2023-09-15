@@ -1,128 +1,133 @@
 <html>
 
 <head>
-    <title>Money Conejito</title>
-    <style>
-        body {
-            background-color: rgb(19, 82, 107);
-            padding: 7vw;
-            overflow: hidden;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            /* Hide scrollbars */
-        }
+	<title>Money Conejito</title>
+	<style>
+		body {
+			background-color: rgb(19, 82, 107);
+			padding: 7vw;
+			overflow: hidden;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			/* Hide scrollbars */
+		}
 
-        #header {
-            display: flex;
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            height: 20px;
-            width: 100%;
-            background: rgb(19, 82, 107);
-            align-items: left;
-            justify-content: center;
-            color: rgb(119, 198, 221);
-        }
+		#header {
+			display: flex;
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			height: 20px;
+			width: 100%;
+			background: rgb(19, 82, 107);
+			align-items: left;
+			justify-content: center;
+			color: rgb(119, 198, 221);
+		}
 
-        #main {
-            cursor: pointer;
-            height: 100%;
-            width: 100%;
-            border-radius: 25px;
-            /*background-color: rgb(62, 103, 103);*/
-            background-color: rgb(18, 99, 131);
-            font-size: 5vw;
-        }
+		#main {
+			cursor: pointer;
+			height: 100%;
+			width: 100%;
+			border-radius: 25px;
+			/*background-color: rgb(62, 103, 103);*/
+			background-color: rgb(18, 99, 131);
+			font-size: 5vw;
+		}
 
 		.library_item {
-            cursor: pointer;
-            margin: 10px;
-        }
+			cursor: pointer;
+			margin: 10px;
+		}
 
 		#primary {
-            display: flex;
-            width: 100%;
-            height: 51%;
-            color: yellow;
-            align-items: center;
-            justify-content: center;
-            border-bottom: dashed 2px rgb(70, 121, 121);
-            user-select: none;
-            opacity: 1;
-            transition: opacity .25s ease;
-        }
+			display: flex;
+			width: 100%;
+			height: 51%;
+			color: yellow;
+			align-items: center;
+			justify-content: center;
+			border-bottom: dashed 2px rgb(70, 121, 121);
+			user-select: none;
+			opacity: 1;
+			transition: opacity .25s ease;
+		}
 
-        .flipped #primary {
-            opacity: .5;
-        }
+		.flipped #primary {
+			opacity: .5;
+		}
 
-        .ended #primary {
-            transition: opacity 2s ease;
+		.ended #primary {
+			transition: opacity 2s ease;
 			opacity: 0;
-        }
+		}
 
 		#secondary {
-            display: flex;
-            width: 100%;
-            height: 49%;
-            color: white;
-            align-items: center;
-            justify-content: center;
-            user-select: none;
-            opacity: 0;
-			transition: opacity .25s ease;
-        }
-
-        .flipped #secondary {
-            opacity: 1;
-        }
-
-        .ended #secondary {
-            transition: opacity 2s ease;
+			display: flex;
+			width: 100%;
+			height: 49%;
+			color: white;
+			align-items: center;
+			justify-content: center;
+			user-select: none;
 			opacity: 0;
-        }
+			transition: opacity .25s ease;
+		}
+
+		.flipped #secondary {
+			opacity: 1;
+		}
+
+		.ended #secondary {
+			transition: opacity 2s ease;
+			opacity: 0;
+		}
 
 		#progress {
-            display: flex;
-            flex-direction: row;
-            align-items: stretch;
-            position: fixed;
-            left: 0px;
-            bottom: 0px;
-            height: 1.5vw;
-            width: 100%;
-            background: rgb(19, 82, 107);
-            align-items: left;
-            justify-content: center;
-        }
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+			position: fixed;
+			left: 0px;
+			bottom: 0px;
+			height: 1.5vw;
+			width: 100%;
+			background: rgb(19, 82, 107);
+			align-items: left;
+			justify-content: center;
+		}
 
-        #progress .item {
-            margin: 3px;
-            width: 100%;
-            background: rgb(80, 127, 145);
-            flex: 1;
-        }
+		#progress .item {
+			margin: 3px;
+			width: 100%;
+			background: rgb(80, 127, 145);
+			flex: 1;
+		}
 
-        #progress .seen {
-            background: rgb(19, 82, 107);
-            transition: background-color 1s ease;
-        }
-    </style>
+		#progress .seen {
+			background: rgb(19, 82, 107);
+			transition: background-color 1s ease;
+		}
+	</style>
 </head>
 
 <body>
-    <div id="header">
-    </div>
-    <div id="main">
-        <div id="primary"></div>
-        <div id="secondary"></div>
+	<div id="header">
 	</div>
-    <div id="progress">
-    </div>
-    <script src="moneybunny.js"></script>
-    <script>
-        setLibraryList(["vocab_module2", "vocab_module3", "google_translate_faves"]);
-    </script>
+	<div id="main">
+		<div id="primary"></div>
+		<div id="secondary"></div>
+	</div>
+	<div id="progress">
+	</div>
+	<script src="moneybunny.js"></script>
+	<script>
+		setLibraryList(
+			[
+				{ name: "Module 2 Vocabulary", src: "conejitos/vocab_module2.json" },
+				{ name: "Module 3 Vocabulary", src: "conejitos/vocab_module3.json" },
+				{ name: "Google Translate Favorites", src: "conejitos/google_translate_faves.json" }
+			]);
+	</script>
 
 </body>
 
