@@ -780,10 +780,6 @@
 		"description": "not even"
 	},
 	{
-		"value": "Ni siquiera parpadear",
-		"description": "Not even blink"
-	},
-	{
 		"value": "nivel",
 		"description": "level"
 	},
@@ -868,20 +864,12 @@
 		"description": "stone"
 	},
 	{
-		"value": "pinche viejo amargado",
-		"description": "fucking bitter old man"
-	},
-	{
 		"value": "polémica",
 		"description": "controversy"
 	},
 	{
 		"value": "pollo a la plancha",
 		"description": "grilled chicken"
-	},
-	{
-		"value": "Por favor déjame morir",
-		"description": "please let me die"
 	},
 	{
 		"value": "por la mitad",
@@ -932,12 +920,8 @@
 		"description": "can find"
 	},
 	{
-		"value": "Puedes hacerlo picante?",
-		"description": "Can you make it spicy?"
-	},
-	{
 		"value": "puesto que es",
-		"description": "Since it is"
+		"description": "since it is"
 	},
 	{
 		"value": "puro desmadre de tacos",
@@ -964,8 +948,8 @@
 		"description": "coming"
 	},
 	{
-		"value": "Quedar",
-		"description": "Stay"
+		"value": "quedar",
+		"description": "stay"
 	},
 	{
 		"value": "quedarse",
@@ -976,8 +960,8 @@
 		"description": "complain"
 	},
 	{
-		"value": "Querida",
-		"description": "Dear"
+		"value": "querida",
+		"description": "dear"
 	},
 	{
 		"value": "quién sabe",
