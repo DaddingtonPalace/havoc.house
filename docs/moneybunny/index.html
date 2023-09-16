@@ -1,6 +1,7 @@
 <html>
 
 <head>
+	<meta charset="UTF-8">
 	<title>Money Conejito</title>
 	<style>
 		body {
@@ -31,7 +32,19 @@
 			border-radius: 25px;
 			/*background-color: rgb(62, 103, 103);*/
 			background-color: rgb(18, 99, 131);
-			font-size: 6vw;
+			font-size: 5vh;
+		}
+
+		@media screen and (min-width: 1024px) {
+			#main {
+				font-size: 6vh;
+			}
+		}
+
+		@media screen and (max-width: 640px) {
+			#main {
+				font-size: 4vh;
+			}
 		}
 
 		.library_item {
@@ -55,15 +68,16 @@
     		margin: 1vw;
 			user-select: none;
 			opacity: 1;
-			transition: opacity .25s ease;
+			transition: opacity .15s ease;
 		}
 
-		.flipped #prompt {
+		#prompt.dimmed {
 			opacity: .2;
+			transition: opacity .15s ease;
 		}
 
 		.ended #prompt {
-			transition: opacity 2s ease;
+			transition: opacity 1s ease;
 			opacity: 0;
 		}
 
@@ -77,15 +91,16 @@
     		margin: 1vw;
 			user-select: none;
 			opacity: 0;
-			transition: opacity .25s ease;
+			transition: opacity .15s ease;
 		}
 
-		.flipped #secret {
+		#secret.revealed {
 			opacity: 1;
+			transition: opacity .15s ease;
 		}
 
 		.ended #secret {
-			transition: opacity 2s ease;
+			transition: opacity 1s ease;
 			opacity: 0;
 		}
 
@@ -121,9 +136,9 @@
 	<div id="header">
 	</div>
 	<div id="main">
-		<div id="prompt"></div>
+		<div id="prompt" class="dimmed"></div>
 		<hr>
-		<div id="secret"></div>
+		<div id="secret" class="revealed"></div>
 	</div>
 	<div id="progress">
 	</div>

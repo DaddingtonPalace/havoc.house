@@ -1,3 +1,156 @@
+var library_provider = null;
+var library = null;
+
+var header = document.getElementById("header");
+var main = document.getElementById("main");
+var prompt = document.getElementById("prompt");
+var secret = document.getElementById("secret");
+var progress = document.getElementById("progress");
+
+document.addEventListener('keydown', function (event) {
+//	 advancePosition();
+});
+
+header.addEventListener('click', function (event) {
+	handleHeaderClick(event);
+});
+
+main.addEventListener('click', function (event) {
+	advancePosition();
+});
+
+function onPromptTransitionEnd() {
+	// nothing to do at this time.
+}
+
+function onSecretTransitionEnd() {
+	if (!secret.classList.contains("revealed")) {
+		secret.innerText = library.getCurrentItem().description;
+	} else {
+	}
+}
+
+// this is a very fragile coupling. Gonna need to revist
+// to ensure we're nice in racey situations.
+prompt.addEventListener("transitionend", onPromptTransitionEnd);
+secret.addEventListener("transitionend", onSecretTransitionEnd);
+
+/**
+ * Sets up the library provider so that the application
+ * can do stuff.
+ * This is the main entry point from the HTML.
+ */
+function setLibraryList(library_sources) {
+	library_provider = new LibraryProvider(library_sources);
+	for (let i = 0; i < library_sources.length; i++) {
+		var node = document.createElement("div");
+		node.id = i;
+		node.innerText = library_sources[i].name;
+		node.classList.add("library_item");
+		header.appendChild(node);
+	}
+}
+
+function resetCardDisplay() {
+	main.classList.remove("ended");
+	prompt.classList.remove("dimmed");
+	secret.classList.remove("revealed");
+}
+
+function revealSecret() {
+	prompt.classList.add('dimmed');
+	secret.classList.add('revealed');
+}
+
+function resetProgressDisplay() {
+	progress.innerHTML = "";
+}
+
+function handleHeaderClick(event) {
+	if (!event.target.classList.contains("library_item")) {
+		console.debug("Ignoring click on non-library item.");
+		return; // not a library item.
+	}
+
+	const library_id = event.target.id;
+	library_provider.loadLibrary(library_id, onLibraryLoaded);
+}
+
+function onLibraryLoaded(new_library) {
+	library = new_library;
+	createProgressLayout();
+	if (!library.hasUnseenItems()) {
+		console.error("Loaded library contains no unseen items.");
+	}
+	goToNextItem();
+}
+
+function goToNextItem() {
+	if (!library.hasUnseenItems()) {
+		console.log("Ignoring request to load next item. No unseen items.");
+		showEndCard();
+		return;
+	}
+
+	var next_position = library.getRandomUnseenPosition();
+	updatetItemDisplay(next_position);
+}
+
+// @position is item position in library
+function updatetItemDisplay(position) {
+	if (!library.isValidPosition(position)) {
+		alert("Can't load item for non-numeric index: " + position);
+		return;
+	}
+	library.setCurrentPosition(position);
+
+	// immediatly update prompt text (which should be in dimmed state).
+	prompt.innerText = library.getCurrentItem().value;
+
+	// only after secret has been un-revealed can we
+	// update the text.
+	secret.addEventListener('animationend', updateSecretText);
+
+	// here we kick off the change in display
+	// state changing secret to hidden and 
+	// changing the main prompt to full opacity.
+	// this employs an animation necessitating
+	// we listen to animationend.
+	resetCardDisplay();
+	updateProgress(position);
+}
+
+function updateSecretText() {
+	secret.innerText = library.getCurrentItem().description;
+}
+
+function showEndCard() {
+	resetCardDisplay();
+	main.classList.add("ended");
+}
+
+function advancePosition() {
+	if (secret.classList.contains("revealed")) {
+		goToNextItem();
+	} else {
+		revealSecret();
+	}
+}
+
+function createProgressLayout() {
+	resetProgressDisplay();
+	for (let i = 0; i < library.size(); i++) {
+		var node = document.createElement("div");
+		node.id = i;
+		node.classList.add("item");
+		progress.appendChild(node);
+	}
+}
+
+function updateProgress(index) {
+	progress.children[index].classList.add("seen");
+}
+
 class Library {
 	constructor(/** array */ items) {
 		// List of item json entris {value: <text>, description: <text>}
@@ -93,139 +246,4 @@ class LibraryProvider {
 			}
 		}
 	}
-}
-
-var library_provider = null;
-var library = null;
-
-var header = document.getElementById("header");
-var main = document.getElementById("main");
-var prompt = document.getElementById("prompt");
-var secret = document.getElementById("secret");
-var progress = document.getElementById("progress");
-
-document.addEventListener('keydown', function (event) {
-//	 advancePosition();
-});
-
-header.addEventListener('click', function (event) {
-	handleHeaderClick(event);
-});
-
-main.addEventListener('click', function (event) {
-	advancePosition();
-});
-
-/**
- * Sets up the library provider so that the application
- * can do stuff.
- * This is the main entry point from the HTML.
- */
-function setLibraryList(library_sources) {
-	library_provider = new LibraryProvider(library_sources);
-	for (let i = 0; i < library_sources.length; i++) {
-		var node = document.createElement("div");
-		node.id = i;
-		node.innerText = library_sources[i].name;
-		node.classList.add("library_item");
-		header.appendChild(node);
-	}
-}
-
-function resetCardDisplay() {
-	main.classList.remove("flipped");
-	main.classList.remove("ended");
-}
-
-function resetProgressDisplay() {
-	progress.innerHTML = "";
-}
-
-function handleHeaderClick(event) {
-	if (!event.target.classList.contains("library_item")) {
-		console.debug("Ignoring click on non-library item.");
-		return; // not a library item.
-	}
-
-	const library_id = event.target.id;
-	library_provider.loadLibrary(library_id, onLibraryLoaded);
-}
-
-function onLibraryLoaded(new_library) {
-	library = new_library;
-	createProgressLayout();
-	if (!library.hasUnseenItems()) {
-		console.error("Loaded library contains no unseen items.");
-	}
-	goToNextItem();
-}
-
-function goToNextItem() {
-	if (!library.hasUnseenItems()) {
-		console.log("Ignoring request to load next item. No unseen items.");
-		showEndCard();
-		return;
-	}
-
-	var next_position = library.getRandomUnseenPosition();
-	presentItem(next_position);
-}
-
-// @position is item position in library
-function presentItem(position) {
-	if (!library.isValidPosition(position)) {
-		alert("Can't load item for non-numeric index: " + position);
-		return;
-	}
-	library.setCurrentPosition(position);
-
-	// this is a big coordination mess WRT CSS transitions.
-	// listening to transition events wasn't working, need
-	// to diagnose why.
-	prompt.innerText = secret.innerText = library.getCurrentItem().value;
-	// secret.addEventListener("animationend", showItemSecretText);
-	showItemSecretText();
-
-	// here we kick off the change in display
-	// state changing secret to hidden and 
-	// changing the main prompt to full opacity.
-	// this employs an animation necessitating
-	// we listen to animationend.
-	resetCardDisplay();
-	updateProgress(position);
-}
-
-function showItemSecretText() {
-	secret.innerText = library.getCurrentItem().description;
-}
-
-function showEndCard() {
-	resetCardDisplay();
-	main.classList.add("ended");
-}
-
-function advancePosition() {
-	if (main.classList.contains("flipped")) {
-		goToNextItem();
-	} else {
-		revealSecret();
-	}
-}
-
-function revealSecret() {
-	main.classList.add('flipped');
-}
-
-function createProgressLayout() {
-	resetProgressDisplay();
-	for (let i = 0; i < library.size(); i++) {
-		var node = document.createElement("div");
-		node.id = i;
-		node.classList.add("item");
-		progress.appendChild(node);
-	}
-}
-
-function updateProgress(index) {
-	progress.children[index].classList.add("seen");
 }
