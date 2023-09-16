@@ -1,18 +1,108 @@
-var libraries = [];
-var items = [];
-var unseen = []; // indices into items
-var seen = []; // indices into items
-var current_item_position = null;
+class Library {
+	constructor(/** array */ items) {
+		// List of item json entris {value: <text>, description: <text>}
+		this.items = items;
+
+		// list of position that have yet to be seen
+		this.unseen = Array.from({length: items.length}, (_, index) => index);
+
+		// list of position that have already been seen
+		this.seen = [];
+
+		// position of item being displayed
+		this.current_item_position = null;
+	}
+
+	isValidPosition(position) {
+		return Number.isInteger(position) && position >= 0 && position < this.items.length;
+	}
+
+	hasUnseenItems() {
+		return this.unseen.length > 0;
+	}
+
+	/**
+	 * Returns a random unseen item position, or -1 if no unseen items exist.
+	 * Does not immediately mark it as seen.
+	 */
+	getRandomUnseenPosition() {
+		if (!this.hasUnseenItems()) {
+			return -1;
+		}
+
+		const unseen_pos = Math.floor(Math.random() * (this.unseen.length - 1));
+		return this.unseen[unseen_pos];
+	}
+
+	setCurrentPosition(position) {
+		this.current_item_position = position;
+		this.markAsSeen(position);
+	}
+
+	getCurrentItem() {
+		return this.items[this.current_item_position];
+	}
+
+	/**
+	 * Move an item from unseen to seen lists.
+	 * @param {*} position item position in library
+	 */
+	markAsSeen(position) {
+		if (this.unseen.indexOf(position) == -1) {
+			alert("New item index " + position + " is not present in unseen=[" + this.unseen + "]");
+			return;
+		}
+		if (this.seen.indexOf(position) != -1) {
+			alert("New item index " + position + " is already present in seen=[" + this.seen + "]");
+			return;
+		}
+		// record the fact that the item is shown
+		this.unseen.splice(this.unseen.indexOf(position), 1);
+		if (this.unseen.indexOf(position) != -1) {
+			alert("Didn't get removed.");
+		}
+
+		this.seen.push(position);
+	}
+
+	size() {
+		return this.items.length;
+	}
+}
+
+class LibraryProvider {
+	constructor(/** array */ library_sources) {
+		this.sources = library_sources;
+	}
+
+	loadLibrary(src_id, callback) {
+		if (this.sources[src_id] == null) {
+			console.error("Cannot load library. Invalid library source id: " + src_id);
+			return;
+		}
+
+		const url = this.sources[src_id].src;
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", url, true);
+		xhr.send();
+		xhr.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				// can do som validation here.
+				var json = JSON.parse(this.responseText);
+				callback(new Library(json));
+			}
+		}
+	}
+}
+
+var library_provider = null;
+var library = null;
 
 var header = document.getElementById("header");
 var main = document.getElementById("main");
-var primary = document.getElementById("primary");
-var secondary = document.getElementById("secondary");
+var prompt = document.getElementById("prompt");
+var secret = document.getElementById("secret");
 var progress = document.getElementById("progress");
-
-window.onhashchange = function () {
-	handleHashChange();
-};
 
 document.addEventListener('keydown', function (event) {
 //	 advancePosition();
@@ -26,11 +116,20 @@ main.addEventListener('click', function (event) {
 	advancePosition();
 });
 
-function resetState() {
-	items = [];
-	unseen = [];
-	seen = [];
-	current_item_position = null;
+/**
+ * Sets up the library provider so that the application
+ * can do stuff.
+ * This is the main entry point from the HTML.
+ */
+function setLibraryList(library_sources) {
+	library_provider = new LibraryProvider(library_sources);
+	for (let i = 0; i < library_sources.length; i++) {
+		var node = document.createElement("div");
+		node.id = i;
+		node.innerText = library_sources[i].name;
+		node.classList.add("library_item");
+		header.appendChild(node);
+	}
 }
 
 function resetCardDisplay() {
@@ -42,83 +141,62 @@ function resetProgressDisplay() {
 	progress.innerHTML = "";
 }
 
-function setLibraryList(new_libraries) {
-	resetState();
-	libraries = new_libraries;
-	onLibrariesChanged();
-}
-
-function onLibrariesChanged() {
-	for (let i = 0; i < libraries.length; i++) {
-		var node = document.createElement("div");
-		node.id = i;
-		node.innerText = libraries[i].name;
-		node.classList.add("library_item");
-		header.appendChild(node);
-	}
-}
-
-function handleHashChange() {
-	var frag = location.hash;
-	var next_item_position = Number(frag.substring(1, frag.length));
-	displayLibraryItem(next_item_position);
-}
-
 function handleHeaderClick(event) {
 	if (!event.target.classList.contains("library_item")) {
+		console.debug("Ignoring click on non-library item.");
 		return; // not a library item.
 	}
+
 	const library_id = event.target.id;
-	if (libraries[library_id] != null) {
-		loadLibrary(library_id);
-	} else {
-		alert("Invalid library id: " + library_id);
+	library_provider.loadLibrary(library_id, onLibraryLoaded);
+}
+
+function onLibraryLoaded(new_library) {
+	library = new_library;
+	createProgressLayout();
+	if (!library.hasUnseenItems()) {
+		console.error("Loaded library contains no unseen items.");
 	}
+	goToNextItem();
 }
 
-function loadLibrary(index) {
-	const url = "https://havoc.house/moneybunny/" + libraries[index].src;
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET", url, true);
-	xhr.send();
-	xhr.onreadystatechange = function () {
-		if (this.readyState == 4 && this.status == 200) {
-			// can do som validation here.
-			var json = JSON.parse(this.responseText);
-			initializeLibrary(json);
-		}
-	}
-}
-
-function initializeLibrary(json) {
-	resetState();
-	items = json;
-	unseen = Array.from({length: items.length}, (_, index) => index);
-	layoutProgress();
-	if (items.length > 0) {
-		loadNextEntry();
-	} else {
-		alert("Failed to load items from library.");
-	}
-}
-
-function getNextUnseenIndex() {
-	const unseen_pos = Math.floor(Math.random() * (unseen.length - 1));
-	return unseen[unseen_pos];
-}
-
-function loadNextEntry() {
-	if (!hasMoreItems()) {
+function goToNextItem() {
+	if (!library.hasUnseenItems()) {
 		console.log("Ignoring request to load next item. No unseen items.");
 		showEndCard();
 		return;
 	}
-	var next_position = getNextUnseenIndex();
-	if (next_position < 0) {
-		console.error("Trying to navigate to invalid position: " + next_position);
-	} else {
-		location.hash = next_position;
+
+	var next_position = library.getRandomUnseenPosition();
+	presentItem(next_position);
+}
+
+// @position is item position in library
+function presentItem(position) {
+	if (!library.isValidPosition(position)) {
+		alert("Can't load item for non-numeric index: " + position);
+		return;
 	}
+	library.setCurrentPosition(position);
+
+	// this is a big coordination mess WRT CSS transitions.
+	// listening to transition events wasn't working, need
+	// to diagnose why.
+	prompt.innerText = secret.innerText = library.getCurrentItem().value;
+	// secret.addEventListener("animationend", showItemSecretText);
+	showItemSecretText();
+
+	// here we kick off the change in display
+	// state changing secret to hidden and 
+	// changing the main prompt to full opacity.
+	// this employs an animation necessitating
+	// we listen to animationend.
+	resetCardDisplay();
+	updateProgress(position);
+}
+
+function showItemSecretText() {
+	secret.innerText = library.getCurrentItem().description;
 }
 
 function showEndCard() {
@@ -126,60 +204,21 @@ function showEndCard() {
 	main.classList.add("ended");
 }
 
-function displayLibraryItem(next_item_position) {
-	if (!Number.isInteger(next_item_position)) {
-		alert("Can't load item for non-numeric index: " + next_item_position);
-		return;
-	}
-	console.log("Displaying item at offset: " + next_item_position);
-
-	resetCardDisplay();
-
-	if (unseen.indexOf(next_item_position) == -1) {
-		alert("New item index " + next_item_position + " is not present in unseen=[" + unseen + "]");
-		return;
-	}
-	if (seen.indexOf(next_item_position) != -1) {
-		alert("New item index " + next_item_position + " is already present in seen=[" + seen + "]");
-		return;
-	}
-	current_item_position = next_item_position;
-	unseen.splice(unseen.indexOf(current_item_position), 1);
-	if (unseen.indexOf(current_item_position) != -1) {
-		alert("Didn't get removed.");
-	}
-
-	seen.push(current_item_position);
-
-	// update the HTML display
-	primary.innerText = items[current_item_position].value;
-	// don't load secondary text up front, otherwise it'll be
-	// shown briefly as the element is only hidden after
-	// a CSS transition (to 0 opacity) is completed
-	secondary.innerText = "";
-	updateProgress(current_item_position);
-}
-
-function hasMoreItems() {
-	return unseen.length > 0;
-}
-
 function advancePosition() {
 	if (main.classList.contains("flipped")) {
-		loadNextEntry();
+		goToNextItem();
 	} else {
-		revealSecondary();
+		revealSecret();
 	}
 }
 
-function revealSecondary() {
-	secondary.innerText = items[current_item_position].description;
+function revealSecret() {
 	main.classList.add('flipped');
 }
 
-function layoutProgress() {
+function createProgressLayout() {
 	resetProgressDisplay();
-	for (let i = 0; i < items.length; i++) {
+	for (let i = 0; i < library.size(); i++) {
 		var node = document.createElement("div");
 		node.id = i;
 		node.classList.add("item");
