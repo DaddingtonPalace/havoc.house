@@ -1,0 +1,188 @@
+[
+	{
+		"value": "en realidad",
+		"description": "actually",
+		"note": "se use una coma despues de la frase\r"
+	},
+	{
+		"value": "hoy en día",
+		"description": "nowadays",
+		"note": "se use una coma despues de la frase\r"
+	},
+	{
+		"value": "actualmente",
+		"description": "nowadays",
+		"note": "\r"
+	},
+	{
+		"value": "por ejemplo",
+		"description": "for example",
+		"note": "se use una coma despues de la frase\r"
+	},
+	{
+		"value": "con respecto a",
+		"description": "regarding; concerning",
+		"note": "\r"
+	},
+	{
+		"value": "en cuanto a",
+		"description": "regarding; concerning",
+		"note": "\r"
+	},
+	{
+		"value": "según",
+		"description": "according to",
+		"note": "\r"
+	},
+	{
+		"value": "por lo general",
+		"description": "in general",
+		"note": "se use una coma despues de la frase\r"
+	},
+	{
+		"value": "cada vez más",
+		"description": "more and more",
+		"note": "\r"
+	},
+	{
+		"value": "cada vez menos",
+		"description": "less and less",
+		"note": "\r"
+	},
+	{
+		"value": "sin embargo",
+		"description": "however; nevertheless; yet",
+		"note": "\r"
+	},
+	{
+		"value": "pero",
+		"description": "but",
+		"note": "\r"
+	},
+	{
+		"value": "a pesar de",
+		"description": "in spite of",
+		"note": "\r"
+	},
+	{
+		"value": "aunque",
+		"description": "even though; even if",
+		"note": "\r"
+	},
+	{
+		"value": "aún así",
+		"description": "even so, even then",
+		"note": "\r"
+	},
+	{
+		"value": "por otra parte",
+		"description": "on the other hand",
+		"note": "\r"
+	},
+	{
+		"value": "no obstante",
+		"description": "regardless",
+		"note": "\r"
+	},
+	{
+		"value": "por otro lado",
+		"description": "on the other hand",
+		"note": "\r"
+	},
+	{
+		"value": "así que",
+		"description": "therefore",
+		"note": "\r"
+	},
+	{
+		"value": "por eso",
+		"description": "because of that",
+		"note": "\r"
+	},
+	{
+		"value": "por lo tanto",
+		"description": "thus, therefore",
+		"note": "\r"
+	},
+	{
+		"value": "por consiguiente",
+		"description": "thus, therefore",
+		"note": "\r"
+	},
+	{
+		"value": "entonces",
+		"description": "then",
+		"note": "\r"
+	},
+	{
+		"value": "por ese motivo",
+		"description": "for that reason",
+		"note": "\r"
+	},
+	{
+		"value": "por esa razón",
+		"description": "for that reason",
+		"note": "\r"
+	},
+	{
+		"value": "de esta manera",
+		"description": "in this way",
+		"note": "\r"
+	},
+	{
+		"value": "por suerte",
+		"description": "luckily; fortunately",
+		"note": "\r"
+	},
+	{
+		"value": "por desgracia",
+		"description": "unfortunately",
+		"note": "\r"
+	},
+	{
+		"value": "en conclusión",
+		"description": "in conclusion",
+		"note": "\r"
+	},
+	{
+		"value": "en resumen",
+		"description": "in summary",
+		"note": "\r"
+	},
+	{
+		"value": "finalmente",
+		"description": "finally",
+		"note": "\r"
+	},
+	{
+		"value": "de lo anterior",
+		"description": "from the above (one can conclude that)",
+		"note": "\r"
+	},
+	{
+		"value": "se puede concluir que",
+		"description": "one can conclude that",
+		"note": "\r"
+	},
+	{
+		"value": "después de todo",
+		"description": "after all",
+		"note": "\r"
+	},
+	{
+		"value": "en todo caso",
+		"description": "in any case",
+		"note": "\r"
+	},
+	{
+		"value": "a fin de cuentas",
+		"description": "in the end, all in all",
+		"note": "\r"
+	},
+	{
+		"value": "a partir de ahora",
+		"description": "hereinafter",
+		"note": "\r"
+	}
+]
+
