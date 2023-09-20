@@ -11,8 +11,7 @@
 	},
 	{
 		"value": "actualmente",
-		"description": "nowadays",
-		"note": "\r"
+		"description": "nowadays"
 	},
 	{
 		"value": "por ejemplo",
@@ -21,18 +20,15 @@
 	},
 	{
 		"value": "con respecto a",
-		"description": "regarding; concerning",
-		"note": "\r"
+		"description": "regarding; concerning"
 	},
 	{
 		"value": "en cuanto a",
-		"description": "regarding; concerning",
-		"note": "\r"
+		"description": "regarding; concerning"
 	},
 	{
 		"value": "según",
-		"description": "according to",
-		"note": "\r"
+		"description": "according to"
 	},
 	{
 		"value": "por lo general",
@@ -41,148 +37,119 @@
 	},
 	{
 		"value": "cada vez más",
-		"description": "more and more",
-		"note": "\r"
+		"description": "more and more"
 	},
 	{
 		"value": "cada vez menos",
-		"description": "less and less",
-		"note": "\r"
+		"description": "less and less"
 	},
 	{
 		"value": "sin embargo",
-		"description": "however; nevertheless; yet",
-		"note": "\r"
+		"description": "however; nevertheless; yet"
 	},
 	{
 		"value": "pero",
-		"description": "but",
-		"note": "\r"
+		"description": "but"
 	},
 	{
 		"value": "a pesar de",
-		"description": "in spite of",
-		"note": "\r"
+		"description": "in spite of"
 	},
 	{
 		"value": "aunque",
-		"description": "even though; even if",
-		"note": "\r"
+		"description": "even though; even if"
 	},
 	{
 		"value": "aún así",
-		"description": "even so, even then",
-		"note": "\r"
+		"description": "even so, even then"
 	},
 	{
 		"value": "por otra parte",
-		"description": "on the other hand",
-		"note": "\r"
+		"description": "on the other hand"
 	},
 	{
 		"value": "no obstante",
-		"description": "regardless",
-		"note": "\r"
+		"description": "regardless"
 	},
 	{
 		"value": "por otro lado",
-		"description": "on the other hand",
-		"note": "\r"
+		"description": "on the other hand"
 	},
 	{
 		"value": "así que",
-		"description": "therefore",
-		"note": "\r"
+		"description": "therefore"
 	},
 	{
 		"value": "por eso",
-		"description": "because of that",
-		"note": "\r"
+		"description": "because of that"
 	},
 	{
 		"value": "por lo tanto",
-		"description": "thus, therefore",
-		"note": "\r"
+		"description": "thus, therefore"
 	},
 	{
 		"value": "por consiguiente",
-		"description": "thus, therefore",
-		"note": "\r"
+		"description": "thus, therefore"
 	},
 	{
 		"value": "entonces",
-		"description": "then",
-		"note": "\r"
+		"description": "then"
 	},
 	{
 		"value": "por ese motivo",
-		"description": "for that reason",
-		"note": "\r"
+		"description": "for that reason"
 	},
 	{
 		"value": "por esa razón",
-		"description": "for that reason",
-		"note": "\r"
+		"description": "for that reason"
 	},
 	{
 		"value": "de esta manera",
-		"description": "in this way",
-		"note": "\r"
+		"description": "in this way"
 	},
 	{
 		"value": "por suerte",
-		"description": "luckily; fortunately",
-		"note": "\r"
+		"description": "luckily; fortunately"
 	},
 	{
 		"value": "por desgracia",
-		"description": "unfortunately",
-		"note": "\r"
+		"description": "unfortunately"
 	},
 	{
 		"value": "en conclusión",
-		"description": "in conclusion",
-		"note": "\r"
+		"description": "in conclusion"
 	},
 	{
 		"value": "en resumen",
-		"description": "in summary",
-		"note": "\r"
+		"description": "in summary"
 	},
 	{
 		"value": "finalmente",
-		"description": "finally",
-		"note": "\r"
+		"description": "finally"
 	},
 	{
 		"value": "de lo anterior",
-		"description": "from the above (one can conclude that)",
-		"note": "\r"
+		"description": "from the above (one can conclude that)"
 	},
 	{
 		"value": "se puede concluir que",
-		"description": "one can conclude that",
-		"note": "\r"
+		"description": "one can conclude that"
 	},
 	{
 		"value": "después de todo",
-		"description": "after all",
-		"note": "\r"
+		"description": "after all"
 	},
 	{
 		"value": "en todo caso",
-		"description": "in any case",
-		"note": "\r"
+		"description": "in any case"
 	},
 	{
 		"value": "a fin de cuentas",
-		"description": "in the end, all in all",
-		"note": "\r"
+		"description": "in the end, all in all"
 	},
 	{
 		"value": "a partir de ahora",
-		"description": "hereinafter",
-		"note": "\r"
+		"description": "hereinafter"
 	}
 ]
 

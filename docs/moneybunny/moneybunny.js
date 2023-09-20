@@ -32,8 +32,8 @@ function onSecretTransitionEnd() {
 
 // this is a very fragile coupling. Gonna need to revist
 // to ensure we're nice in racey situations.
-prompt.addEventListener("transitionend", onPromptTransitionEnd);
 secret.addEventListener("transitionend", onSecretTransitionEnd);
+secret.addEventListener("transitioncancel", onSecretTransitionEnd);
 
 /**
  * Sets up the library provider so that the application
