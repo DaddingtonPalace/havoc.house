@@ -1,7 +1,8 @@
 var library_provider = null;
 var library = null;
 
-var header = document.getElementById("header");
+var menu_toggle = document.getElementById("menu_toggle");
+var menu_items = document.getElementById("menu_items");
 var main = document.getElementById("main");
 var prompt = document.getElementById("prompt");
 var secret = document.getElementById("secret");
@@ -11,8 +12,12 @@ document.addEventListener('keydown', function (event) {
 //	 advancePosition();
 });
 
-header.addEventListener('click', function (event) {
-	handleHeaderClick(event);
+menu_toggle.addEventListener('click', function (event) {
+	handleMenuToggleClick();
+});
+
+menu_items.addEventListener('click', function (event) {
+	handleMenuItemClick(event);
 });
 
 main.addEventListener('click', function (event) {
@@ -23,17 +28,14 @@ function onPromptTransitionEnd() {
 	// nothing to do at this time.
 }
 
-function onSecretTransitionEnd() {
-	if (!secret.classList.contains("revealed")) {
-		secret.innerText = library.getCurrentItem().description;
-	} else {
-	}
+function isSecretVisible() {
+	return secret.classList.contains("revealed");
 }
 
 // this is a very fragile coupling. Gonna need to revist
 // to ensure we're nice in racey situations.
-secret.addEventListener("transitionend", onSecretTransitionEnd);
-secret.addEventListener("transitioncancel", onSecretTransitionEnd);
+// secret.addEventListener("transitionend", onSecretTransitionEnd);
+// secret.addEventListener("transitioncancel", onSecretTransitionEnd);
 
 /**
  * Sets up the library provider so that the application
@@ -47,7 +49,7 @@ function setLibraryList(library_sources) {
 		node.id = i;
 		node.innerText = library_sources[i].name;
 		node.classList.add("library_item");
-		header.appendChild(node);
+		menu_items.appendChild(node);
 	}
 }
 
@@ -58,7 +60,7 @@ function resetCardDisplay() {
 }
 
 function revealSecret() {
-	prompt.classList.add('dimmed');
+	secret.innerText = library.getCurrentItem().description;
 	secret.classList.add('revealed');
 }
 
@@ -66,14 +68,22 @@ function resetProgressDisplay() {
 	progress.innerHTML = "";
 }
 
-function handleHeaderClick(event) {
-	if (!event.target.classList.contains("library_item")) {
-		console.debug("Ignoring click on non-library item.");
-		return; // not a library item.
+function handleMenuToggleClick() {
+	if (menu_items.classList.contains("hidden")) {
+		menu_items.classList.remove("hidden");
+	} else {
+		menu_items.classList.add("hidden");
 	}
+}
 
-	const library_id = event.target.id;
-	library_provider.loadLibrary(library_id, onLibraryLoaded);
+function handleMenuItemClick(event) {
+	if (event.target.classList.contains("library_item")) {
+		const library_id = event.target.id;
+		library_provider.loadLibrary(library_id, onLibraryLoaded);
+		handleMenuToggleClick(); // hide it
+	} else {
+		console.debug("Ignoring click on non-menu-item.");
+	}
 }
 
 function onLibraryLoaded(new_library) {
@@ -86,6 +96,9 @@ function onLibraryLoaded(new_library) {
 }
 
 function goToNextItem() {
+	if (!library) {
+		return;
+	}
 	if (!library.hasUnseenItems()) {
 		console.log("Ignoring request to load next item. No unseen items.");
 		showEndCard();
@@ -130,7 +143,7 @@ function showEndCard() {
 }
 
 function advancePosition() {
-	if (secret.classList.contains("revealed")) {
+	if (isSecretVisible()) {
 		goToNextItem();
 	} else {
 		revealSecret();

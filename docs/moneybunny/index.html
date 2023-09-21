@@ -12,17 +12,33 @@
 			/* Hide scrollbars */
 		}
 
-		#header {
-			display: flex;
+		.hidden {
+			display: none;
+		}
+
+		#menu {
 			position: fixed;
 			left: 0px;
 			top: 0px;
-			height: 20px;
-			width: 100%;
-			background: rgb(19, 82, 107);
-			align-items: left;
-			justify-content: center;
-			color: rgb(119, 198, 221);
+			display: flex;
+			background: rgb(5, 59, 81);
+			flex-direction: row;
+			color: white;
+			user-select: none;
+		}
+
+		#menu_toggle, #menu_items {
+			cursor: pointer;
+			padding: 1em;
+		}
+
+		.library_item {
+			cursor: pointer;
+			padding-bottom: 1em;
+		}
+
+		.library_item:last-child {
+			padding-bottom: 0;
 		}
 
 		#main {
@@ -45,11 +61,6 @@
 			#main {
 				font-size: 4vh;
 			}
-		}
-
-		.library_item {
-			cursor: pointer;
-			margin: 10px;
 		}
 
 		hr {
@@ -133,7 +144,9 @@
 </head>
 
 <body>
-	<div id="header">
+	<div id="menu">
+		<div id="menu_toggle">☰</div>
+		<div id="menu_items" class="hidden"></div>
 	</div>
 	<div id="main">
 		<div id="prompt" class="dimmed"></div>
