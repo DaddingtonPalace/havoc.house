@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,28 +8,34 @@
 		body {
 			background-color: rgb(19, 82, 107);
 			padding: 7vw;
+			/* Hide scrollbars */
 			overflow: hidden;
 			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-			/* Hide scrollbars */
+			/* don't highlight on tap, lame */
+			-webkit-tap-highlight-color: transparent;
+ 			 touch-action: manipulation;
 		}
 
 		#menu {
-			position: fixed;
-			left: 2px;
-			top: 2px;
+			position: absolute;
+			z-index: 1;  /* above #main */
+			left: 5px;
+			top: 5px;
 			background: rgb(5, 59, 81);
 			display: flex;
 			flex-direction: row;
 			color: white;
 			user-select: none;
 			border-radius: 5px;
+			font-size: 2em;
 		}
 
 		#menu.collapsed {
 			background: none;
 		}
 
-		#menu_toggle, #menu_items {
+		#menu_toggle,
+		#menu_items {
 			cursor: pointer;
 			padding: 1em;
 		}
@@ -51,29 +58,20 @@
 		}
 
 		#main {
+			position: absolute;
+			top: 5%;
+			left: 5%;
+			width: 90%;
+			height: 90%;
 			cursor: pointer;
-			height: 100%;
-			width: 100%;
-			border-radius: 25px;
+			border-radius: 20px;
 			/*background-color: rgb(62, 103, 103);*/
 			background-color: rgb(18, 99, 131);
 			font-size: 5vh;
 		}
 
-		@media screen and (min-width: 1024px) {
-			#main {
-				font-size: 6vh;
-			}
-		}
-
-		@media screen and (max-width: 640px) {
-			#main {
-				font-size: 4vh;
-			}
-		}
-
 		hr {
-    		margin: 0;
+			margin: 0;
 			border: none;
 			border-bottom: dashed 2px rgb(70, 121, 121);
 		}
@@ -85,7 +83,7 @@
 			align-items: center;
 			justify-content: center;
 			text-align: center;
-    		margin: 1vw;
+			margin: 1vw;
 			user-select: none;
 			opacity: 1;
 			transition: opacity .15s ease;
@@ -108,7 +106,7 @@
 			align-items: center;
 			justify-content: center;
 			text-align: center;
-    		margin: 1vw;
+			margin: 1vw;
 			user-select: none;
 			opacity: 0;
 			transition: opacity .15s ease;
@@ -148,6 +146,22 @@
 		#progress .seen {
 			background: rgb(19, 82, 107);
 			transition: background-color 1s ease;
+		}
+	</style>
+	<style>
+		/** Smaller layout */
+		@media screen and (min-width: 1024px) {
+			#main {
+				font-size: 6vh;
+			}
+		}
+	</style>
+	<style>
+		/** Smallest layout (phone) */
+		@media screen and (max-width: 480px) {
+			#main {
+				font-size: 4vh;
+			}
 		}
 	</style>
 </head>
