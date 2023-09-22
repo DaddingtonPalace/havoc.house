@@ -18,7 +18,7 @@
 
 		#menu {
 			position: absolute;
-			z-index: 1;  /* above #main */
+			z-index: 1;  /* above #cardbox */
 			left: 5px;
 			top: 5px;
 			background: rgb(5, 59, 81);
@@ -57,17 +57,17 @@
 			padding-bottom: 0;
 		}
 
-		#main {
+		#cardbox {
 			position: absolute;
-			top: 5%;
+			top: 10%;
 			left: 5%;
 			width: 90%;
-			height: 90%;
+			height: 80%;
 			cursor: pointer;
 			border-radius: 20px;
 			/*background-color: rgb(62, 103, 103);*/
 			background-color: rgb(18, 99, 131);
-			font-size: 5vh;
+			font-size: 4em;
 		}
 
 		hr {
@@ -129,7 +129,7 @@
 			position: fixed;
 			left: 0px;
 			bottom: 0px;
-			height: 1.5vw;
+			height: 3vh;
 			width: 100%;
 			background: rgb(19, 82, 107);
 			align-items: left;
@@ -139,30 +139,29 @@
 		#progress .item {
 			margin: 1px;
 			width: 100%;
-			background: rgb(80, 127, 145);
+			background: white;
+			opacity: 10%;
 			flex: 1;
 		}
 
-		#progress .seen {
-			background: rgb(19, 82, 107);
-			transition: background-color 1s ease;
+		#progress .started {
+			opacity: 50%;
+			background: yellow;
+			transition: opacity 200ms ease, background-color 200ms ease;
+		}
+
+		#progress .complete {
+			opacity: 0%;
+			transition: opacity 200ms ease, background-color 200ms ease;
 		}
 	</style>
 	<style>
 		/** Smaller layout */
-		@media screen and (min-width: 1024px) {
+		/* @media screen and (max-width: 980px) {
 			#main {
-				font-size: 6vh;
+				font-size: 5em;
 			}
-		}
-	</style>
-	<style>
-		/** Smallest layout (phone) */
-		@media screen and (max-width: 480px) {
-			#main {
-				font-size: 4vh;
-			}
-		}
+		} */
 	</style>
 </head>
 
@@ -171,7 +170,7 @@
 		<div id="menu_toggle">☰</div>
 		<div id="menu_items"></div>
 	</div>
-	<div id="main">
+	<div id="cardbox">
 		<div id="prompt" class="dimmed"></div>
 		<hr>
 		<div id="secret" class="revealed"></div>
