@@ -12,19 +12,20 @@
 			/* Hide scrollbars */
 		}
 
-		.hidden {
-			display: none;
-		}
-
 		#menu {
 			position: fixed;
-			left: 0px;
-			top: 0px;
-			display: flex;
+			left: 2px;
+			top: 2px;
 			background: rgb(5, 59, 81);
+			display: flex;
 			flex-direction: row;
 			color: white;
 			user-select: none;
+			border-radius: 5px;
+		}
+
+		#menu.collapsed {
+			background: none;
 		}
 
 		#menu_toggle, #menu_items {
@@ -32,9 +33,17 @@
 			padding: 1em;
 		}
 
+		#menu.collapsed #menu_items {
+			display: none;
+		}
+
 		.library_item {
 			cursor: pointer;
 			padding-bottom: 1em;
+		}
+
+		.library_item:hover {
+			text-decoration: underline;
 		}
 
 		.library_item:last-child {
@@ -144,9 +153,9 @@
 </head>
 
 <body>
-	<div id="menu">
+	<div id="menu" class="collapsed">
 		<div id="menu_toggle">☰</div>
-		<div id="menu_items" class="hidden"></div>
+		<div id="menu_items"></div>
 	</div>
 	<div id="main">
 		<div id="prompt" class="dimmed"></div>

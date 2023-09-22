@@ -1,6 +1,7 @@
 var library_provider = null;
 var library = null;
 
+var menu = document.getElementById("menu");
 var menu_toggle = document.getElementById("menu_toggle");
 var menu_items = document.getElementById("menu_items");
 var main = document.getElementById("main");
@@ -69,10 +70,10 @@ function resetProgressDisplay() {
 }
 
 function handleMenuToggleClick() {
-	if (menu_items.classList.contains("hidden")) {
-		menu_items.classList.remove("hidden");
+	if (menu.classList.contains("collapsed")) {
+		menu.classList.remove("collapsed");
 	} else {
-		menu_items.classList.add("hidden");
+		menu.classList.add("collapsed");
 	}
 }
 
@@ -139,6 +140,7 @@ function updateSecretText() {
 
 function showEndCard() {
 	resetCardDisplay();
+	handleMenuToggleClick();
 	main.classList.add("ended");
 }
 
