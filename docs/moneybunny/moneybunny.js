@@ -4,7 +4,7 @@ class Library {
 		this.items = items;
 
 		// list of position that have yet to be seen
-		this.unseen = Array.from({length: items.length}, (_, index) => index);
+		this.unseen = Array.from({ length: items.length }, (_, index) => index);
 
 		// list of position that have already been seen
 		this.seen = [];
@@ -118,7 +118,7 @@ class ProgressDisplay {
 	itemStarted(index) {
 		this.element.children[index].classList.add("started");
 	}
-	
+
 	itemCompleted(index) {
 		this.element.children[index].classList.add("complete");
 	}
@@ -128,28 +128,75 @@ class ProgressDisplay {
 	}
 }
 
+class MenuDisplay {
+	constructor(menu_element, toggle_element, items_element, item_click_callback) {
+		this.menu = menu_element;
+		this.toggle = toggle_element;
+		this.items_container = items_element;
+		this.callback = item_click_callback;
+
+		// Not sure how to do js method callbacks that correctly
+		// capture "this". For now we capture this as "self"
+		// so we can call it from the event handler callbacks.
+		var self = this;
+		toggle_element.addEventListener('click', function (event) {
+			self._handleToggleClick();
+		});
+
+		items_element.addEventListener('click', function (event) {
+			self._handleItemClick(event);
+		});
+	}
+
+	expandMenu() {
+		this.menu.classList.remove("collapsed");
+	}
+
+    collapseMenu() {
+		this.menu.classList.add("collapsed");
+	}
+
+    isExpanded() {
+		return !this.menu.classList.contains("collapsed");
+	}
+
+	addMenuItem(id, name) {
+		var node = document.createElement("div");
+		node.id = id;
+		node.innerText = name;
+		node.classList.add("library_item");
+		this.items_container.appendChild(node);
+	}
+
+	_handleToggleClick() {
+		if (this.isExpanded()) {
+			this.collapseMenu();
+		} else {
+			this.expandMenu();
+		}
+	}
+
+	_handleItemClick(event) {
+		if (event.target.classList.contains("library_item")) {
+			this.callback(event.target.id);
+		} else {
+			console.debug("Ignoring click on non-menu-item.");
+		}
+		this.collapseMenu();
+	}
+}
 
 var library_provider = null;
 var library = null;
+var menu = null;
 var progress = null;
 
-var menu = document.getElementById("menu");
-var menu_toggle = document.getElementById("menu_toggle");
-var menu_items = document.getElementById("menu_items");
 var main = document.getElementById("cardbox");
 var prompt = document.getElementById("prompt");
 var secret = document.getElementById("secret");
 
 document.addEventListener('keydown', function (event) {
-//	 advancePosition();
-});
-
-menu_toggle.addEventListener('click', function (event) {
-	handleMenuToggleClick();
-});
-
-menu_items.addEventListener('click', function (event) {
-	handleMenuItemClick(event);
+	//	 advancePosition();
 });
 
 cardbox.addEventListener('click', function (event) {
@@ -164,11 +211,6 @@ function isSecretVisible() {
 	return secret.classList.contains("revealed");
 }
 
-// this is a very fragile coupling. Gonna need to revist
-// to ensure we're nice in racey situations.
-// secret.addEventListener("transitionend", onSecretTransitionEnd);
-// secret.addEventListener("transitioncancel", onSecretTransitionEnd);
-
 /**
  * Sets up the library provider so that the application
  * can do stuff.
@@ -176,15 +218,32 @@ function isSecretVisible() {
  */
 function setLibraryList(library_sources) {
 	library_provider = new LibraryProvider(library_sources);
+	menu = new MenuDisplay(
+		document.getElementById("menu"),
+		document.getElementById("menu_toggle"),
+		document.getElementById("menu_items"),
+		onMenuClick);
 	for (let i = 0; i < library_sources.length; i++) {
-		var node = document.createElement("div");
-		node.id = i;
-		node.innerText = library_sources[i].name;
-		node.classList.add("library_item");
-		menu_items.appendChild(node);
+		menu.addMenuItem(i, library_sources[i].name);
 	}
 	resetCardDisplay();
-	handleMenuToggleClick();
+	menu.expandMenu();
+}
+
+function onMenuClick(library_id) {
+	library_provider.loadLibrary(library_id, onLibraryLoaded);
+}
+
+function onLibraryLoaded(new_library) {
+	library = new_library;
+	progress = new ProgressDisplay(
+		document.getElementById("progress"),
+		library);
+	progress.createLayout();
+	if (!library.hasUnseenItems()) {
+		console.error("Loaded library contains no unseen items.");
+	}
+	goToNextItem();
 }
 
 function resetCardDisplay() {
@@ -196,36 +255,6 @@ function resetCardDisplay() {
 function revealSecret() {
 	secret.innerText = library.getCurrentItem().description;
 	secret.classList.add('revealed');
-}
-
-function handleMenuToggleClick() {
-	if (menu.classList.contains("collapsed")) {
-		menu.classList.remove("collapsed");
-	} else {
-		menu.classList.add("collapsed");
-	}
-}
-
-function handleMenuItemClick(event) {
-	if (event.target.classList.contains("library_item")) {
-		const library_id = event.target.id;
-		library_provider.loadLibrary(library_id, onLibraryLoaded);
-		handleMenuToggleClick(); // hide it
-	} else {
-		console.debug("Ignoring click on non-menu-item.");
-	}
-}
-
-function onLibraryLoaded(new_library) {
-	library = new_library;
-	progress = new ProgressDisplay(
-		document.getElementById("progress"),
-		library);
-		progress.createLayout();
-	if (!library.hasUnseenItems()) {
-		console.error("Loaded library contains no unseen items.");
-	}
-	goToNextItem();
 }
 
 function goToNextItem() {
@@ -279,7 +308,7 @@ function showEndCard() {
 	resetCardDisplay();
 	progress.clearLayout();
 	cardbox.classList.add("ended");
-	handleMenuToggleClick();
+	menu.expandMenu();
 }
 
 function advancePosition() {
