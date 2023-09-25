@@ -34,7 +34,7 @@ class Library {
 			return -1;
 		}
 
-		const unseen_pos = Math.floor(Math.random() * (this.unseen.length - 1));
+		const unseen_pos = Math.floor(Math.random() * this.unseen.length);
 		return this.unseen[unseen_pos];
 	}
 
@@ -99,9 +99,39 @@ class LibraryProvider {
 	}
 }
 
+class ProgressDisplay {
+	constructor(html_element, library) {
+		this.element = html_element;
+		this.library = library;
+	}
+
+	createLayout() {
+		this.clearLayout();
+		for (let i = 0; i < library.size(); i++) {
+			var node = document.createElement("div");
+			node.id = i;
+			node.classList.add("item");
+			this.element.appendChild(node);
+		}
+	}
+
+	itemStarted(index) {
+		this.element.children[index].classList.add("started");
+	}
+	
+	itemCompleted(index) {
+		this.element.children[index].classList.add("complete");
+	}
+
+	clearLayout() {
+		this.element.innerHTML = "";
+	}
+}
+
 
 var library_provider = null;
 var library = null;
+var progress = null;
 
 var menu = document.getElementById("menu");
 var menu_toggle = document.getElementById("menu_toggle");
@@ -109,7 +139,6 @@ var menu_items = document.getElementById("menu_items");
 var main = document.getElementById("cardbox");
 var prompt = document.getElementById("prompt");
 var secret = document.getElementById("secret");
-var progress = document.getElementById("progress");
 
 document.addEventListener('keydown', function (event) {
 //	 advancePosition();
@@ -169,10 +198,6 @@ function revealSecret() {
 	secret.classList.add('revealed');
 }
 
-function resetProgressDisplay() {
-	progress.innerHTML = "";
-}
-
 function handleMenuToggleClick() {
 	if (menu.classList.contains("collapsed")) {
 		menu.classList.remove("collapsed");
@@ -193,7 +218,10 @@ function handleMenuItemClick(event) {
 
 function onLibraryLoaded(new_library) {
 	library = new_library;
-	createProgressLayout();
+	progress = new ProgressDisplay(
+		document.getElementById("progress"),
+		library);
+		progress.createLayout();
 	if (!library.hasUnseenItems()) {
 		console.error("Loaded library contains no unseen items.");
 	}
@@ -223,7 +251,7 @@ function updatetItemDisplay(position) {
 
 	const current_position = library.getCurrentItemPosition();
 	if (current_position != null) {
-		cardCompleted(current_position);
+		progress.itemCompleted(current_position);
 	}
 	library.setCurrentPosition(position);
 
@@ -240,7 +268,7 @@ function updatetItemDisplay(position) {
 	// this employs an animation necessitating
 	// we listen to animationend.
 	resetCardDisplay();
-	cardStarted(position);
+	progress.itemStarted(position);
 }
 
 function updateSecretText() {
@@ -249,8 +277,9 @@ function updateSecretText() {
 
 function showEndCard() {
 	resetCardDisplay();
-	handleMenuToggleClick();
+	progress.clearLayout();
 	cardbox.classList.add("ended");
+	handleMenuToggleClick();
 }
 
 function advancePosition() {
@@ -259,22 +288,4 @@ function advancePosition() {
 	} else {
 		revealSecret();
 	}
-}
-
-function createProgressLayout() {
-	resetProgressDisplay();
-	for (let i = 0; i < library.size(); i++) {
-		var node = document.createElement("div");
-		node.id = i;
-		node.classList.add("item");
-		progress.appendChild(node);
-	}
-}
-
-function cardStarted(index) {
-	progress.children[index].classList.add("started");
-}
-
-function cardCompleted(index) {
-	progress.children[index].classList.add("complete");
 }
