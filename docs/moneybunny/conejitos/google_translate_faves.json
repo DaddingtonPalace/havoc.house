@@ -1,31 +1,11 @@
 [
 	{
-		"value": "a menudo",
-		"description": "often"
-	},
-	{
-		"value": "a pesar de",
-		"description": "although"
-	},
-	{
-		"value": "a tiempo",
-		"description": "on time"
-	},
-	{
-		"value": "acaba de hacer",
-		"description": "just did"
-	},
-	{
 		"value": "acabados",
 		"description": "finishes"
 	},
 	{
 		"value": "acabar",
 		"description": "finish"
-	},
-	{
-		"value": "acabo de dormir",
-		"description": "I just slept"
 	},
 	{
 		"value": "acordar",
@@ -64,10 +44,6 @@
 		"description": "chili pepper"
 	},
 	{
-		"value": "al que",
-		"description": "to which"
-	},
-	{
 		"value": "alcanzar",
 		"description": "to attain"
 	},
@@ -76,20 +52,8 @@
 		"description": "to reach"
 	},
 	{
-		"value": "algo así",
-		"description": "something like that"
-	},
-	{
-		"value": "allí estaba",
-		"description": "there it was"
-	},
-	{
 		"value": "alrededor",
 		"description": "around"
-	},
-	{
-		"value": "amantes de la cerveza",
-		"description": "beer lovers"
 	},
 	{
 		"value": "ambos",
@@ -98,10 +62,6 @@
 	{
 		"value": "añade",
 		"description": "add"
-	},
-	{
-		"value": "anoche nos sentimos alegres",
-		"description": "last night we felt happy"
 	},
 	{
 		"value": "anterior",
@@ -122,10 +82,6 @@
 	{
 		"value": "apenas",
 		"description": "barely"
-	},
-	{
-		"value": "apenas tuvimos",
-		"description": "we hardly had"
 	},
 	{
 		"value": "aplastados",
@@ -152,10 +108,6 @@
 		"description": "affair"
 	},
 	{
-		"value": "atención al cliente",
-		"description": "Customer Support"
-	},
-	{
 		"value": "atontado",
 		"description": "stunned"
 	},
@@ -174,10 +126,6 @@
 	{
 		"value": "averiguar",
 		"description": "to find out"
-	},
-	{
-		"value": "ay chinga",
-		"description": "oh fuck"
 	},
 	{
 		"value": "basta",
@@ -208,36 +156,16 @@
 		"description": "I searched"
 	},
 	{
-		"value": "cada vez en cuando",
-		"description": "every now and then"
-	},
-	{
 		"value": "caer",
 		"description": "to fall"
-	},
-	{
-		"value": "caer",
-		"description": "to fall"
-	},
-	{
-		"value": "caer",
-		"description": "fall"
 	},
 	{
 		"value": "canción",
 		"description": "song"
 	},
 	{
-		"value": "casa",
-		"description": "home"
-	},
-	{
 		"value": "casi",
 		"description": "almost"
-	},
-	{
-		"value": "casi no hablo espanol",
-		"description": "I hardly speak Spanish"
 	},
 	{
 		"value": "cerebro",
@@ -249,7 +177,7 @@
 	},
 	{
 		"value": "chingones",
-		"description": "badass"
+		"description": "a (smart & quick)(badass)(messes with people)(kinda cool) person "
 	},
 	{
 		"value": "chulo",
@@ -260,16 +188,8 @@
 		"description": "figures"
 	},
 	{
-		"value": "como pueden ver",
-		"description": "as you can see"
-	},
-	{
 		"value": "compartir",
 		"description": "to share"
-	},
-	{
-		"value": "con qué frecuencia",
-		"description": "how often"
 	},
 	{
 		"value": "consciemente",
@@ -344,22 +264,6 @@
 		"description": "to damage"
 	},
 	{
-		"value": "dar consejos",
-		"description": "give advice"
-	},
-	{
-		"value": "de la mitad",
-		"description": "from the half"
-	},
-	{
-		"value": "de repente",
-		"description": "suddenly"
-	},
-	{
-		"value": "de todas maneras",
-		"description": "anyway"
-	},
-	{
 		"value": "deber",
 		"description": "have to"
 	},
@@ -394,10 +298,6 @@
 	{
 		"value": "desconchinflado",
 		"description": "deflated"
-	},
-	{
-		"value": "desde entonces",
-		"description": "since then"
 	},
 	{
 		"value": "desear",
@@ -440,18 +340,6 @@
 		"description": "having fun"
 	},
 	{
-		"value": "el campo",
-		"description": "field"
-	},
-	{
-		"value": "el probador del tienda",
-		"description": "the store dressing room"
-	},
-	{
-		"value": "el probador del tienda",
-		"description": "the store changing room"
-	},
-	{
 		"value": "elegir",
 		"description": "choose"
 	},
@@ -462,18 +350,6 @@
 	{
 		"value": "emparcaron",
 		"description": "they parked"
-	},
-	{
-		"value": "en lugar de",
-		"description": "rather"
-	},
-	{
-		"value": "en vez de",
-		"description": "instead of"
-	},
-	{
-		"value": "en voz alta",
-		"description": "aloud"
 	},
 	{
 		"value": "encender",
@@ -580,10 +456,6 @@
 		"description": "sentence"
 	},
 	{
-		"value": "frase",
-		"description": "sentence"
-	},
-	{
 		"value": "frenar",
 		"description": "brake"
 	},
@@ -624,10 +496,6 @@
 		"description": "to do"
 	},
 	{
-		"value": "hay una manera?",
-		"description": "is there a way?"
-	},
-	{
 		"value": "herencia",
 		"description": "inheritance"
 	},
@@ -650,10 +518,6 @@
 	{
 		"value": "huerto",
 		"description": "vegetable patch"
-	},
-	{
-		"value": "ida y vuelta",
-		"description": "round trip"
 	},
 	{
 		"value": "imprescindible",
@@ -688,18 +552,6 @@
 		"description": "together"
 	},
 	{
-		"value": "la mayoría",
-		"description": "the majority"
-	},
-	{
-		"value": "la temporada de lluvia",
-		"description": "the rainy season"
-	},
-	{
-		"value": "largo placo",
-		"description": "long term"
-	},
-	{
 		"value": "lavavajillas",
 		"description": "dishwasher"
 	},
@@ -716,14 +568,6 @@
 		"description": "fill in"
 	},
 	{
-		"value": "lo escuché",
-		"description": "I heard it"
-	},
-	{
-		"value": "los anteriores",
-		"description": "the previous ones"
-	},
-	{
 		"value": "luchar",
 		"description": "fight, struggle"
 	},
@@ -732,20 +576,8 @@
 		"description": "ripen"
 	},
 	{
-		"value": "mala fama",
-		"description": "notoriety"
-	},
-	{
 		"value": "manejar",
 		"description": "handle"
-	},
-	{
-		"value": "más allá de",
-		"description": "beyond"
-	},
-	{
-		"value": "me parece",
-		"description": "it seems to me"
 	},
 	{
 		"value": "medir",
@@ -764,44 +596,16 @@
 		"description": "furniture"
 	},
 	{
-		"value": "muy flotado",
-		"description": "very floaty"
-	},
-	{
-		"value": "muy poco, claro",
-		"description": "very little, of course"
-	},
-	{
 		"value": "ni",
 		"description": "neither, nor"
-	},
-	{
-		"value": "ni siquiera",
-		"description": "not even"
 	},
 	{
 		"value": "nivel",
 		"description": "level"
 	},
 	{
-		"value": "no hay de qué",
-		"description": "it doesn't matter"
-	},
-	{
-		"value": "No nos interesamos en las problemas suyas.",
-		"description": "We are not interested in your problems."
-	},
-	{
-		"value": "no se sabe",
-		"description": "it is not known"
-	},
-	{
-		"value": "no tengo ganas",
-		"description": "I have no desire (to do ...)"
-	},
-	{
-		"value": "nos vemos",
-		"description": "see ya"
+		"value": "odiar",
+		"description": "to hate"
 	},
 	{
 		"value": "olvidar",
@@ -814,10 +618,6 @@
 	{
 		"value": "oración",
 		"description": "prayer, sentence"
-	},
-	{
-		"value": "papi chulo",
-		"description": "pimp daddy"
 	},
 	{
 		"value": "paracer",
@@ -868,18 +668,6 @@
 		"description": "controversy"
 	},
 	{
-		"value": "pollo a la plancha",
-		"description": "grilled chicken"
-	},
-	{
-		"value": "por la mitad",
-		"description": "in half"
-	},
-	{
-		"value": "por supuesto",
-		"description": "of course"
-	},
-	{
 		"value": "Posteriormente",
 		"description": "Subsequently"
 	},
@@ -916,38 +704,6 @@
 		"description": "starred"
 	},
 	{
-		"value": "pueden encontrar",
-		"description": "can find"
-	},
-	{
-		"value": "puesto que es",
-		"description": "since it is"
-	},
-	{
-		"value": "puro desmadre de tacos",
-		"description": "pure taco riot"
-	},
-	{
-		"value": "que da igual",
-		"description": "it remains the same"
-	},
-	{
-		"value": "que dejaron",
-		"description": "what they leave"
-	},
-	{
-		"value": "Qué hay de nuevo",
-		"description": "What's new"
-	},
-	{
-		"value": "Qué lástima!",
-		"description": "What a pity!"
-	},
-	{
-		"value": "que viene",
-		"description": "coming"
-	},
-	{
 		"value": "quedar",
 		"description": "stay"
 	},
@@ -962,10 +718,6 @@
 	{
 		"value": "querida",
 		"description": "dear"
-	},
-	{
-		"value": "quién sabe",
-		"description": "who knows"
 	},
 	{
 		"value": "quisas",
@@ -1044,24 +796,12 @@
 		"description": "noisy"
 	},
 	{
-		"value": "se quejó",
-		"description": "She complained"
-	},
-	{
-		"value": "seguir",
-		"description": "follow, continue"
-	},
-	{
 		"value": "seguir",
 		"description": "follow, continue"
 	},
 	{
 		"value": "según",
 		"description": "according"
-	},
-	{
-		"value": "según se tipo de irregularidad",
-		"description": "depending on the type of irregularity"
 	},
 	{
 		"value": "semillas",
@@ -1076,20 +816,12 @@
 		"description": "feelings"
 	},
 	{
-		"value": "si ser bello es un delito, declaro culpable",
-		"description": "If being beautiful is a crime, I plead guilty"
-	},
-	{
 		"value": "siguiente",
 		"description": "following"
 	},
 	{
 		"value": "siguir",
 		"description": "follow"
-	},
-	{
-		"value": "sin embargo",
-		"description": "however, nevertheless"
 	},
 	{
 		"value": "sinfín",
@@ -1109,11 +841,7 @@
 	},
 	{
 		"value": "subir",
-		"description": "to upload"
-	},
-	{
-		"value": "subir",
-		"description": "go up"
+		"description": "to go up; to upload"
 	},
 	{
 		"value": "subrayada",
@@ -1152,24 +880,8 @@
 		"description": "neither"
 	},
 	{
-		"value": "tan difícil",
-		"description": "so hard"
-	},
-	{
-		"value": "tanto para nada",
-		"description": "so much for nothing"
-	},
-	{
-		"value": "tantos como",
-		"description": "as many as"
-	},
-	{
 		"value": "temor",
 		"description": "fear"
-	},
-	{
-		"value": "teniendo en cuenta",
-		"description": "taking into account"
 	},
 	{
 		"value": "tiznada",
@@ -1178,10 +890,6 @@
 	{
 		"value": "todavía",
 		"description": "still"
-	},
-	{
-		"value": "todos gritaron",
-		"description": "everyone yelled"
 	},
 	{
 		"value": "trámite",
@@ -1198,18 +906,6 @@
 	{
 		"value": "turnar",
 		"description": "turn"
-	},
-	{
-		"value": "un lindo recuerdo",
-		"description": "a nice memory"
-	},
-	{
-		"value": "un poquitín",
-		"description": "a little bit"
-	},
-	{
-		"value": "un tiroteo impactante",
-		"description": "a shocking shooting"
 	},
 	{
 		"value": "unifamilar",
@@ -1246,26 +942,6 @@
 	{
 		"value": "vivienda",
 		"description": "living place"
-	},
-	{
-		"value": "y para usted, caballero?",
-		"description": "and for you, sir?"
-	},
-	{
-		"value": "ya compartido",
-		"description": "already shared"
-	},
-	{
-		"value": "ya no vale",
-		"description": "no longer worth"
-	},
-	{
-		"value": "ya vuelvo",
-		"description": "I'll be right back"
-	},
-	{
-		"value": "yo lo único",
-		"description": "I'm the only one"
 	},
 	{
 		"value": "zurdos",
