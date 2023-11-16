@@ -1,0 +1,70 @@
+[
+    {
+        "value": "abrir",
+        "description": "abierto"
+    },
+    {
+        "value": "componer",
+        "description": "compuesto"
+    },
+    {
+        "value": "cubrir",
+        "description": "cubierto"
+    },
+    {
+        "value": "descubrir",
+        "description": "descubierto"
+    },
+    {
+        "value": "decir",
+        "description": "dicho"
+    },
+    {
+        "value": "describir",
+        "description": "descrito"
+    },
+    {
+        "value": "deshacer",
+        "description": "deshecho"
+    },
+    {
+        "value": "devolver",
+        "description": "devuelto"
+    },
+    {
+        "value": "escribir",
+        "description": "escrito"
+    },
+    {
+        "value": "freír",
+        "description": "frito"
+    },
+    {
+        "value": "hacer",
+        "description": "hecho"
+    },
+    {
+        "value": "morir",
+        "description": "muerto"
+    },
+    {
+        "value": "poner",
+        "description": "puesto"
+    },
+    {
+        "value": "resolver",
+        "description": "resuelto"
+    },
+    {
+        "value": "romper",
+        "description": "roto"
+    },
+    {
+        "value": "ver",
+        "description": "visto"
+    },
+    {
+        "value": "volver",
+        "description": "vuelto"
+    }
+]
