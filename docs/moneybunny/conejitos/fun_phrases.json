@@ -168,8 +168,8 @@
 		"description": "it doesn't matter"
 	},
 	{
-		"value": "No nos interesamos en las problemas suyas.",
-		"description": "We are not interested in your problems."
+		"value": "no nos interesamos en las problemas suyas",
+		"description": "we are not interested in your problems"
 	},
 	{
 		"value": "no se sabe",
@@ -177,7 +177,7 @@
 	},
 	{
 		"value": "no tengo ganas",
-		"description": "I have no desire (to do ...)"
+		"description": "I have no desire (to ...)"
 	},
 	{
 		"value": "nos vemos",
@@ -225,7 +225,7 @@
 	},
 	{
 		"value": "Qué lástima!",
-		"description": "What a pity!"
+		"description": "what a pity!"
 	},
 	{
 		"value": "que viene",
@@ -237,7 +237,7 @@
 	},
 	{
 		"value": "se quejó",
-		"description": "She complained"
+		"description": "she complained"
 	},
 	{
 		"value": "según se tipo de irregularidad",
@@ -245,11 +245,14 @@
 	},
 	{
 		"value": "si ser bello es un delito, declaro culpable",
-		"description": "If being beautiful is a crime, I plead guilty"
+		"description": "if being beautiful is a crime, I plead guilty"
 	},
 	{
 		"value": "sin embargo",
-		"description": "however, nevertheless"
+		"description": [
+			"however",
+			"nevertheless"
+		]
 	},
 	{
 		"value": "tan difícil",

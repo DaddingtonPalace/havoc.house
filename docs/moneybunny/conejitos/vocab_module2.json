@@ -1,132 +1,250 @@
 [
-    {
-		"value": "sostiner",
-		"description": "hold, argue",
-		"note": "as in a grip, maintain\"\r\naclarar,clarify,\r\nlograr,achieve,\r\npropia,own,propia > proper > property\r\noportuno,timely,\r\nen vez de,instead of,\"en lugar de, en sitio de\"\r\ngastos asociados,related expenses,\r\nvarios,several,\r\naumentar,increase,augment\r\nalimento,food,plain and simple 🙂\r\nen cuanto,\"as soon as, as for"
-    },
-    {
+	{
+		"value": "sostener",
+		"description": [
+			"hold",
+			"sustain",
+			"support"
+		]
+	},
+	{
+		"value": "aclarar",
+		"description": "clarify"
+	},
+	{
+		"value": "lograr",
+		"description": "achieve"
+	},
+	{
+		"value": "propia",
+		"description": "own",
+		"details": "propia > proper > property"
+	},
+	{
+		"value": "oportuno",
+		"description": [
+			"timely",
+			"prompt"
+		]
+	},
+	{
+		"value": "en vez de",
+		"description": [
+			"instead of",
+			"in place of"
+		]
+	},
+	{
+		"value": "en lugar de",
+		"description": [
+			"instead of",
+			"in place of"
+		]
+	},
+	{
+		"value": "gastos asociados",
+		"description": "related expenses"
+	},
+	{
+		"value": "varios",
+		"description": "several"
+	},
+	{
+		"value": "aumentar",
+		"description": "increase"
+	},
+	{
+		"value": "alimento",
+		"description": [
+			"food",
+			"nourishment"
+		]
+	},
+	{
+		"value": "en cuanto",
+		"description": "as soon as"
+	},
+	{
 		"value": "es clave",
 		"description": "it's key"
-    },
-    {
+	},
+	{
 		"value": "proporcionar",
-		"description": "provides, supply"
-    },
-    {
+		"description": [
+			"provides",
+			"supply"
+		]
+	},
+	{
 		"value": "equilibrada",
 		"description": "balanced"
-    },
-    {
+	},
+	{
 		"value": "prestaciones",
 		"description": "benefits"
-    },
-    {
+	},
+	{
 		"value": "A pesar de que",
 		"description": "despite the fact that"
-    },
-    {
+	},
+	{
 		"value": "presupuesto",
 		"description": "budget"
-    },
-    {
+	},
+	{
 		"value": "alargar",
 		"description": "lengthen"
-    },
-    {
+	},
+	{
 		"value": "alcanzar",
 		"description": "reach"
-    },
-    {
+	},
+	{
 		"value": "hechos",
 		"description": "facts"
-    },
-    {
+	},
+	{
 		"value": "faltar",
 		"description": "lack"
-    },
-    {
+	},
+	{
 		"value": "que alivio",
 		"description": "what a relief"
-    },
-    {
+	},
+	{
 		"value": "unos",
-		"description": "some, about (a quantity)"
-    },
-    {
+		"description": [
+			"some"
+		]
+	},
+	{
 		"value": "tanto",
 		"description": "so much"
-    },
-    {
+	},
+	{
 		"value": "mitad",
 		"description": "half"
-    },
-    {
+	},
+	{
 		"value": "trasfondo",
 		"description": "background"
-    },
-    {
+	},
+	{
 		"value": "equivocado",
 		"description": "mistaken"
-    },
-    {
+	},
+	{
 		"value": "significado",
 		"description": "meaning"
-    },
-    {
+	},
+	{
 		"value": "raíz",
 		"description": "root"
-    },
-    {
+	},
+	{
 		"value": "cuyo",
 		"description": "whose"
-    },
-    {
+	},
+	{
 		"value": "grosería",
 		"description": "rudeness"
-    },
-    {
+	},
+	{
 		"value": "soportar",
 		"description": "put up with"
-    },
-    {
+	},
+	{
 		"value": "ámbito",
 		"description": "scope, field"
-    },
-    {
+	},
+	{
 		"value": "demanda",
 		"description": "lawsuit"
-    },
-    {
+	},
+	{
 		"value": "comprobar",
-		"description": "check, verify",
-		"note": "verify experiment, check answers\"\r\nchequear,check,\"check on someone, check in luggage\"\r\npautas,guidelines,\r\npara empezar,to begin with,\r\nprimeramente,firstly,\r\nprimero,first,\r\nen primer lugar,in the first place,\r\nademás,moreover,se use una coma despues de la frase\r\ntambién,also,\r\ncomo consecuencia,as a result,\r\ncomo resultado,as a result,\r\nde hecho,\"in fact, as a matter of fact"
-    },
-    {
+		"description": [
+			"check",
+			"verify"
+		],
+		"details": "as in verify experiment or to check answers"
+	},
+	{
+		"name": "chequear",
+		"description": "check",
+		"details": "check on someone, check in luggage"
+	},
+	{
+		"name": "pautas",
+		"description": "guidelines"
+	},
+	{
+		"name": "para empezar",
+		"description": "to begin with"
+	},
+	{
+		"name": "primeramente",
+		"description": "firstly"
+	},
+	{
+		"name": "primero",
+		"description": "first"
+	},
+	{
+		"name": "en primer lugar",
+		"description": "in the first place"
+	},
+	{
+		"name": "además",
+		"description": "moreover",
+		"details": "se use una coma despues de la frase"
+	},
+	{
+		"name": "también",
+		"description": "also"
+	},
+	{
+		"name": "como consecuencia",
+		"description": "as a result"
+	},
+	{
+		"name": "como resultado",
+		"description": "as a result"
+	},
+	{
+		"name": "de hecho",
+		"description": [
+			"in fact",
+			"as a matter of fact"
+		]
+	},
+	{
 		"value": "exitoso",
 		"description": "successful"
-    },
-    {
+	},
+	{
 		"value": "propósito",
 		"description": "purpose"
-    },
-    {
+	},
+	{
 		"value": "alegrar(se)",
 		"description": "gladden"
-    },
-    {
+	},
+	{
 		"value": "todavía",
 		"description": "still, yet"
-    },
-    {
+	},
+	{
 		"value": "caber",
-		"description": "to fit (like in a schedule)"
-    },
-    {
+		"description": "to fit",
+		"details": "like a glove"
+	},
+	{
 		"value": "horario",
 		"description": "schedule"
-    },
-    {
+	},
+	{
 		"value": "las pocos",
 		"description": "the few"
-    }
+	}
 ]

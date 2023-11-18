@@ -45,11 +45,13 @@
     },
     {
         "value": "en balde",
-        "description": "in vain (idiomatic)"
+        "description": "in vain",
+        "details": "idiomatic"
     },
     {
         "value": "balón",
-        "description": "ball (pelota > small ball)"
+        "description": "ball",
+        "details": "with pelota being a small ball"
     },
     {
         "value": "carga",

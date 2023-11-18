@@ -2,12 +2,12 @@
 	{
 		"value": "en realidad",
 		"description": "actually",
-		"note": "se use una coma despues de la frase\r"
+		"details": "se use una coma despues de la frase"
 	},
 	{
 		"value": "hoy en día",
 		"description": "nowadays",
-		"note": "se use una coma despues de la frase\r"
+		"details": "se use una coma despues de la frase"
 	},
 	{
 		"value": "actualmente",
@@ -16,15 +16,21 @@
 	{
 		"value": "por ejemplo",
 		"description": "for example",
-		"note": "se use una coma despues de la frase\r"
+		"details": "se use una coma despues de la frase"
 	},
 	{
 		"value": "con respecto a",
-		"description": "regarding; concerning"
+		"description": [
+			"regarding",
+			"concerning"
+		]
 	},
 	{
 		"value": "en cuanto a",
-		"description": "regarding; concerning"
+		"description": [
+			"regarding",
+			"concerning"
+		]
 	},
 	{
 		"value": "según",
@@ -33,7 +39,7 @@
 	{
 		"value": "por lo general",
 		"description": "in general",
-		"note": "se use una coma despues de la frase\r"
+		"details": "se use una coma despues de la frase"
 	},
 	{
 		"value": "cada vez más",
@@ -45,7 +51,11 @@
 	},
 	{
 		"value": "sin embargo",
-		"description": "however; nevertheless; yet"
+		"description": [
+			"however",
+			"nevertheless",
+			"yet"
+		]
 	},
 	{
 		"value": "pero",
@@ -57,11 +67,17 @@
 	},
 	{
 		"value": "aunque",
-		"description": "even though; even if"
+		"description": [
+			"even though",
+			"even if"
+		]
 	},
 	{
 		"value": "aún así",
-		"description": "even so, even then"
+		"description": [
+			"even so",
+			"even then"
+		]
 	},
 	{
 		"value": "por otra parte",
@@ -85,11 +101,17 @@
 	},
 	{
 		"value": "por lo tanto",
-		"description": "thus, therefore"
+		"description": [
+			"thus",
+			"therefore"
+		]
 	},
 	{
 		"value": "por consiguiente",
-		"description": "thus, therefore"
+		"description": [
+			"thus",
+			"therefore"
+		]
 	},
 	{
 		"value": "entonces",
@@ -109,7 +131,10 @@
 	},
 	{
 		"value": "por suerte",
-		"description": "luckily; fortunately"
+		"description": [
+			"luckily",
+			"fortunately"
+		]
 	},
 	{
 		"value": "por desgracia",
@@ -145,7 +170,10 @@
 	},
 	{
 		"value": "a fin de cuentas",
-		"description": "in the end, all in all"
+		"description": [
+			"in the end",
+			"all in all"
+		]
 	},
 	{
 		"value": "a partir de ahora",

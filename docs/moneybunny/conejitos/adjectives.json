@@ -1,115 +1,169 @@
 [
     {
         "value": "aburrido",
-        "description": "bored"
+        "description": [
+            "bored"
+        ]
     },
     {
-        "value": "agotado/a",
-        "description": "exhausted"
+        "value": "agotado",
+        "description": [
+            "exhausted"
+        ]
     },
     {
-        "value": "aliviado/a",
-        "description": "relieved"
+        "value": "aliviado",
+        "description": [
+            "relieved"
+        ]
     },
     {
-        "value": "amargado/a",
-        "description": "embittered"
+        "value": "amargado",
+        "description": [
+            "embittered"
+        ]
     },
     {
-        "value": "atontado/a",
-        "description": "stunned",
-        "description": "bewildered"
+        "value": "atontado",
+        "description": [
+            "stunned",
+            "bewildered"
+        ]
     },
     {
-        "value": "atrevido/a",
-        "description": "daring",
-        "description": "bold"
+        "value": "atrevido",
+        "description": [
+            "daring",
+            "bold"
+        ]
     },
     {
-        "value": "avispado/a",
-        "description": "sharp",
-        "description": "clever"
+        "value": "avispado",
+        "description": [
+            "sharp",
+            "clever"
+        ]
     },
     {
-        "value": "cansado/a",
-        "description": "tired"
+        "value": "cansado",
+        "description": [
+            "tired"
+        ]
     },
     {
-        "value": "confudido/a",
-        "description": "confused"
+        "value": "confudido",
+        "description": [
+            "confused"
+        ]
     },
     {
-        "value": "consternado/a",
-        "description": "dismayed",
-        "description": "distraught"
+        "value": "consternado",
+        "description": [
+            "dismayed",
+            "distraught"
+        ]
     },
     {
-        "value": "deprimido/a",
-        "description": "depressed"
+        "value": "deprimido",
+        "description": [
+            "depressed"
+        ]
     },
     {
-        "value": "desaliñado/a",
-        "description": "unkempt",
-        "description": "slovenly"
+        "value": "desaliñado",
+        "description": [
+            "unkempt",
+            "slovenly"
+        ]
     },
     {
-        "value": "descuidado/a",
-        "description": "careless"
+        "value": "descuidado",
+        "description": [
+            "careless"
+        ]
     },
     {
-        "value": "desocupado/a",
-        "description": "unocupied"
+        "value": "desocupado",
+        "description": [
+            "unocupied"
+        ]
     },
     {
-        "value": "distraído/a",
-        "description": "distracted"
+        "value": "distraído",
+        "description": [
+            "distracted"
+        ]
     },
     {
-        "value": "enamorado/a",
-        "description": "in love"
+        "value": "enamorado",
+        "description": [
+            "in love"
+        ]
     },
     {
-        "value": "enfadado/a",
-        "description": "annoyed"
+        "value": "enfadado",
+        "description": [
+            "annoyed"
+        ]
     },
     {
-        "value": "enojado/a",
-        "description": "angry"
+        "value": "enojado",
+        "description": [
+            "angry"
+        ]
     },
     {
-        "value": "entusiasmado/a",
-        "description": "enthusiastic"
+        "value": "entusiasmado",
+        "description": [
+            "enthusiastic"
+        ]
     },
     {
-        "value": "equilibrado/a",
-        "description": "balanced"
+        "value": "equilibrado",
+        "description": [
+            "balanced"
+        ]
     },
     {
-        "value": "estresado/a",
-        "description": "stressed"
+        "value": "estresado",
+        "description": [
+            "stressed"
+        ]
     },
     {
-        "value": "malhumorado/a",
-        "description": "ill tempered"
+        "value": "malhumorado",
+        "description": [
+            "ill tempered"
+        ]
     },
     {
-        "value": "muerto/a de sueño",
-        "description": "dead tired"
+        "value": "muerto de sueño",
+        "description": [
+            "dead tired"
+        ]
     },
     {
-        "value": "muerto/a de frio",
-        "description": "frozen to the bone"
+        "value": "muerto de frio",
+        "description": [
+            "frozen to the bone"
+        ]
     },
     {
-        "value": "muerto/a de calor",
-        "description": "dying from the heat"
+        "value": "muerto de calor",
+        "description": [
+            "dying from the heat"
+        ]
     },
     {
-        "value": "muerto/a de hambre",
-        "description": "dying from hunger"
+        "value": "muerto de hambre",
+        "description": [
+            "dying from hunger"
+        ]
     },
     {
-        "value": "sorprendido/a",
-        "description": "suprised,"
+        "value": "sorprendido",
+        "description": [
+            "suprised"
+        ]
     }
 ]

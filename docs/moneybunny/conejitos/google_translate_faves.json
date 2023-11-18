@@ -65,7 +65,10 @@
 	},
 	{
 		"value": "anterior",
-		"description": "former, previous"
+		"description": [
+			"former",
+			"previous"
+		]
 	},
 	{
 		"value": "anteriormente",
@@ -89,7 +92,10 @@
 	},
 	{
 		"value": "aplastar",
-		"description": "smash, crush"
+		"description": [
+			"smash",
+			"crush"
+		]
 	},
 	{
 		"value": "aprovecha",
@@ -176,12 +182,28 @@
 		"description": "shamans"
 	},
 	{
-		"value": "chingones",
-		"description": "a (smart & quick)(badass)(messes with people)(kinda cool) person "
+		"value": "chingón",
+		"description": [
+			"someone who is very smart",
+			"someone who likes to mess with people",
+			"someone or something that is very cool"
+		]
 	},
 	{
 		"value": "chulo",
-		"description": "cool, pimp"
+		"description": [
+			"pimp"
+		]
+	},
+	{
+		"value": "chulo (adjective)",
+		"description": [
+			[
+				"cute",
+				"pretty",
+				"lovely"
+			]
+		]
 	},
 	{
 		"value": "cifras",
@@ -225,7 +247,10 @@
 	},
 	{
 		"value": "crecer",
-		"description": "to grow, grow (up)"
+		"description": [
+			"to grow",
+			"grow (up)"
+		]
 	},
 	{
 		"value": "creciendo",
@@ -385,7 +410,10 @@
 	},
 	{
 		"value": "equivocado",
-		"description": "wrong, mistaken"
+		"description": [
+			"wrong",
+			"mistaken"
+		]
 	},
 	{
 		"value": "escenario",
@@ -413,7 +441,11 @@
 	},
 	{
 		"value": "estratagema",
-		"description": "contrivance, trick, ruse"
+		"description": [
+			"contrivance",
+			"trick",
+			"ruse"
+		]
 	},
 	{
 		"value": "estrechas",
@@ -429,7 +461,10 @@
 	},
 	{
 		"value": "faltan",
-		"description": "missing, lacking"
+		"description": [
+			"missing",
+			"lacking"
+		]
 	},
 	{
 		"value": "fanáticos",
@@ -437,7 +472,10 @@
 	},
 	{
 		"value": "fastidioso",
-		"description": "annoying, bothersome"
+		"description": [
+			"annoying",
+			"bothersome"
+		]
 	},
 	{
 		"value": "flojos",
@@ -501,7 +539,7 @@
 	},
 	{
 		"value": "hispanohablantes",
-		"description": "Spanish speakers"
+		"description": "spanish speakers"
 	},
 	{
 		"value": "hogar",
@@ -541,7 +579,11 @@
 	},
 	{
 		"value": "joder",
-		"description": "to fuck (sex), to fuck up, screw around"
+		"description": [
+			"to fuck (copulate)",
+			"to fuck up",
+			"screw around"
+		]
 	},
 	{
 		"value": "jugué",
@@ -561,7 +603,10 @@
 	},
 	{
 		"value": "llegar",
-		"description": "arrive, reach"
+		"description": [
+			"arrive",
+			"reach"
+		]
 	},
 	{
 		"value": "llenar",
@@ -569,7 +614,10 @@
 	},
 	{
 		"value": "luchar",
-		"description": "fight, struggle"
+		"description": [
+			"fight",
+			"struggle"
+		]
 	},
 	{
 		"value": "madurar",
@@ -589,7 +637,8 @@
 	},
 	{
 		"value": "mudo",
-		"description": "dumb (unable to speak)"
+		"description": "dumb",
+		"details": "unable to speak"
 	},
 	{
 		"value": "muebles",
@@ -597,7 +646,10 @@
 	},
 	{
 		"value": "ni",
-		"description": "neither, nor"
+		"description": [
+			"neither",
+			"nor"
+		]
 	},
 	{
 		"value": "nivel",
@@ -617,7 +669,10 @@
 	},
 	{
 		"value": "oración",
-		"description": "prayer, sentence"
+		"description": [
+			"prayer",
+			"sentence"
+		]
 	},
 	{
 		"value": "paracer",
@@ -668,8 +723,8 @@
 		"description": "controversy"
 	},
 	{
-		"value": "Posteriormente",
-		"description": "Subsequently"
+		"value": "posteriormente",
+		"description": "subsequently"
 	},
 	{
 		"value": "preciosa",
@@ -684,8 +739,8 @@
 		"description": "concerned"
 	},
 	{
-		"value": "Profundo",
-		"description": "Deep"
+		"value": "profundo",
+		"description": "deep"
 	},
 	{
 		"value": "propia",
@@ -700,8 +755,8 @@
 		"description": "purpose"
 	},
 	{
-		"value": "Protagonizó",
-		"description": "starred"
+		"value": "protagonizó",
+		"description": "starred (in)"
 	},
 	{
 		"value": "quedar",
@@ -797,7 +852,10 @@
 	},
 	{
 		"value": "seguir",
-		"description": "follow, continue"
+		"description": [
+			"follow",
+			"continue"
+		]
 	},
 	{
 		"value": "según",
@@ -841,7 +899,10 @@
 	},
 	{
 		"value": "subir",
-		"description": "to go up; to upload"
+		"description": [
+			"to go up",
+			"to upload"
+		]
 	},
 	{
 		"value": "subrayada",

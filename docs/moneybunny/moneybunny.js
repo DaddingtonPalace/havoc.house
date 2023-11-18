@@ -152,11 +152,11 @@ class MenuDisplay {
 		this.menu.classList.remove("collapsed");
 	}
 
-    collapseMenu() {
+	collapseMenu() {
 		this.menu.classList.add("collapsed");
 	}
 
-    isExpanded() {
+	isExpanded() {
 		return !this.menu.classList.contains("collapsed");
 	}
 
@@ -253,7 +253,7 @@ function resetCardDisplay() {
 }
 
 function revealSecret() {
-	secret.innerText = library.getCurrentItem().description;
+	updateSecretText();
 	secret.classList.add('revealed');
 }
 
@@ -287,9 +287,9 @@ function updatetItemDisplay(position) {
 	// immediatly update prompt text (which should be in dimmed state).
 	prompt.innerText = library.getCurrentItem().value;
 
-	// only after secret has been un-revealed can we
-	// update the text.
-	secret.addEventListener('animationend', updateSecretText);
+	// // only after secret has been un-revealed can we
+	// // update the text.
+	// secret.addEventListener('animationend', updateSecretText);
 
 	// here we kick off the change in display
 	// state changing secret to hidden and 
@@ -300,8 +300,25 @@ function updatetItemDisplay(position) {
 	progress.itemStarted(position);
 }
 
+function escapeHtml(unsafe) {
+	return unsafe
+		.replaceAll('&', '&amp;')
+		.replaceAll('<', '&lt;')
+		.replaceAll('>', '&gt;')
+		.replaceAll('"', '&quot;')
+		.replaceAll("'", '&#039;');
+}
+
 function updateSecretText() {
-	secret.innerText = library.getCurrentItem().description;
+	var unsafe = "";
+	var desc = library.getCurrentItem().description;
+	if (Array.isArray(desc)) {
+		unsafe = desc.join(" / ");
+	} else {
+		unsafe = desc;
+	}
+
+	secret.innerText = escapeHtml(unsafe);
 }
 
 function showEndCard() {
