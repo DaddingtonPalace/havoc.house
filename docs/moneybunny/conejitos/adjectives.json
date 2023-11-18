@@ -1,0 +1,115 @@
+[
+    {
+        "value": "aburrido",
+        "description": "bored"
+    },
+    {
+        "value": "agotado/a",
+        "description": "exhausted"
+    },
+    {
+        "value": "aliviado/a",
+        "description": "relieved"
+    },
+    {
+        "value": "amargado/a",
+        "description": "embittered"
+    },
+    {
+        "value": "atontado/a",
+        "description": "stunned",
+        "description": "bewildered"
+    },
+    {
+        "value": "atrevido/a",
+        "description": "daring",
+        "description": "bold"
+    },
+    {
+        "value": "avispado/a",
+        "description": "sharp",
+        "description": "clever"
+    },
+    {
+        "value": "cansado/a",
+        "description": "tired"
+    },
+    {
+        "value": "confudido/a",
+        "description": "confused"
+    },
+    {
+        "value": "consternado/a",
+        "description": "dismayed",
+        "description": "distraught"
+    },
+    {
+        "value": "deprimido/a",
+        "description": "depressed"
+    },
+    {
+        "value": "desaliñado/a",
+        "description": "unkempt",
+        "description": "slovenly"
+    },
+    {
+        "value": "descuidado/a",
+        "description": "careless"
+    },
+    {
+        "value": "desocupado/a",
+        "description": "unocupied"
+    },
+    {
+        "value": "distraído/a",
+        "description": "distracted"
+    },
+    {
+        "value": "enamorado/a",
+        "description": "in love"
+    },
+    {
+        "value": "enfadado/a",
+        "description": "annoyed"
+    },
+    {
+        "value": "enojado/a",
+        "description": "angry"
+    },
+    {
+        "value": "entusiasmado/a",
+        "description": "enthusiastic"
+    },
+    {
+        "value": "equilibrado/a",
+        "description": "balanced"
+    },
+    {
+        "value": "estresado/a",
+        "description": "stressed"
+    },
+    {
+        "value": "malhumorado/a",
+        "description": "ill tempered"
+    },
+    {
+        "value": "muerto/a de sueño",
+        "description": "dead tired"
+    },
+    {
+        "value": "muerto/a de frio",
+        "description": "frozen to the bone"
+    },
+    {
+        "value": "muerto/a de calor",
+        "description": "dying from the heat"
+    },
+    {
+        "value": "muerto/a de hambre",
+        "description": "dying from hunger"
+    },
+    {
+        "value": "sorprendido/a",
+        "description": "suprised,"
+    }
+]
